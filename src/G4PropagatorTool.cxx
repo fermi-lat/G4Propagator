@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.cxx,v 1.4 2003/03/06 00:19:11 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.cxx,v 1.5 2003/04/21 22:31:07 usher Exp $
 //
 // Description: Service for particle transport management
 //
@@ -45,10 +45,10 @@ StatusCode G4PropagatorTool::initialize()
   geometrySvc = gsv;
 
   StatusCode sc = toolSvc()->retrieveTool("G4PropagationTool", propagatorTool);
+  if (sc.isSuccess()) {log << MSG::INFO << "G4 Propagator Tool ready" << endreq;}
+  else  { log << MSG::ERROR << "Couldn't retrieve G4PropagationTool " << endreq; }
 
-  log << MSG::INFO << "G4 Propagator Tool ready" << endreq;
-
-  return StatusCode::SUCCESS;
+  return sc;
 }
 
 G4PropagatorTool::~G4PropagatorTool()
