@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.15 2005/02/24 22:19:32 usher Exp $
+    $Id: release.notes,v 1.16 2005/02/27 23:42:49 usher Exp $
  @verbatim
 
+ v2r1p2 27-Feb-05 TU   Ok, "really" fix bug affecting cal energy determination now
  v2r1p1 27-Feb-05 TU   Further attempts are improving performance, fix active distance bug
  v2r1p0 24-Feb-05 TU   Revamp to reduce calls to G4 Locate and Global setup
  v2r0p2 20-Feb-05 TU   Fix ParticlePropagator for "stuck" particles
