@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.2 2003/01/29 23:59:12 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.3 2003/04/21 22:31:07 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -696,7 +696,7 @@ G4String ParticleTransporter::printVolName(const G4VPhysicalVolume* pCurVolume) 
     else return " ";
 }
 
-G4VPhysicalVolume* ParticleTransporter::getVolume(G4ThreeVector& position, bool fudge) const
+G4VPhysicalVolume* ParticleTransporter::getVolume(const Hep3Vector& position, bool fudge) const
 {
   // Purpose and Method: Returns a pointer to the lowest level G4PhysicalVolume
   //                     which contains the point given in the variable position
