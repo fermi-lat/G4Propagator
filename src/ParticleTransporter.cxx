@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.8 2004/11/09 20:39:18 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.9 2004/11/30 16:13:00 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -14,6 +14,7 @@
 
 #include <stdexcept>
 #include <string>
+#include <sstream>
 #include <algorithm>
 
 //Constructor for the propagator class
@@ -69,9 +70,13 @@ void ParticleTransporter::setInitStep(const Point& start,  const Vector& dir)
   G4VPhysicalVolume* pVolume   = navigator->LocateGlobalPointAndSetup(startPoint, 0, false);
 
   //Let's be sure that we are inside a valid volume (ie inside of GLAST - it can happen!)
-  if (!pVolume ) 
+
+  if (!pVolume) 
   {
-      throw std::domain_error("ParticleTransporter given invalid initial position");
+      std::stringstream errorStream;
+      errorStream << "ParticleTransporter given invalid initial conditions. pos: " 
+          << startPoint << " dir: " << startDir;
+      throw std::domain_error(errorStream.str());
   }
 
 
