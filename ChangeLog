@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Nov 30 08:13:00 PST 2004
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Fix linux compile error
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p0, operation: add
 Package: G4Propagator
