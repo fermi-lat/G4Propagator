@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.6 2004/02/17 23:35:36 mcenery Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.8 2004/11/09 20:39:18 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -12,6 +12,7 @@
 #include "CLHEP/Vector/ThreeVector.h"
 #include "globals.hh"
 
+#include <stdexcept>
 #include <string>
 #include <algorithm>
 
@@ -66,6 +67,13 @@ void ParticleTransporter::setInitStep(const Point& start,  const Vector& dir)
   //Set the start point at the beginning of our list of volumes
   G4Navigator*       navigator = m_TransportationManager->GetNavigatorForTracking();
   G4VPhysicalVolume* pVolume   = navigator->LocateGlobalPointAndSetup(startPoint, 0, false);
+
+  //Let's be sure that we are inside a valid volume (ie inside of GLAST - it can happen!)
+  if (!pVolume ) 
+  {
+      throw std::domain_error("ParticleTransporter given invalid initial position");
+  }
+
 
   //Record our starting point
   stepInfo.push_back(TransportStepInfo(startPoint, 0.));
@@ -493,7 +501,8 @@ double ParticleTransporter::distanceToEdge(const Vector& dir) const
       //**G4ThreeVector trackDir = navigator->ComputeLocalAxis(curDir);
       const G4AffineTransform& globalToLocal = navigator->GetGlobalToLocalTransform();
       G4ThreeVector trackPos = globalToLocal.TransformPoint(curPoint);
-      G4ThreeVector trackDir = globalToLocal.IsRotated() ? globalToLocal.TransformAxis(curDir) : curDir;
+      G4ThreeVector trackDir = curDir;
+      if (globalToLocal.IsRotated()) trackDir = globalToLocal.TransformAxis(curDir);
 
       //This calculates the distance along the direction of the track to the 
       //boundary of the current volume
