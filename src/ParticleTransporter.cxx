@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.3 2003/04/21 22:31:07 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.4 2003/04/22 18:15:29 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -60,6 +60,9 @@ void ParticleTransporter::setInitStep(const Point& start,  const Vector& dir)
   //Store the starting point and direction
   startPoint  = start;
   startDir    = dir;
+
+  //Test for transportation manager!!
+  if (!m_TransportationManager) setTransportationManager(m_geometrySvc->getTransportationManager());
 
   //Set the start point at the beginning of our list of volumes
   G4Navigator*       navigator = m_TransportationManager->GetNavigatorForTracking();
