@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: usher  Mon Jun 16 10:28:04 PDT 2003
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Place test for transportationmanager in setup method. Helps prevent crashes 
+caused by initialization order problems. 
+
+    *
+------------------------------------------------------------
+User: usher  Mon Jun 16 10:28:04 PDT 2003
 G4Propagator/doc
 
 Modified Files:
