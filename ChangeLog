@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Thu Jan 23 13:47:19 PST 2003
+G4Propagator/VC7debug/G4Propagator
+
+Removed Files:
+	BuildLog.htm vc70.idb vc70.pdb 
+Log Message:
+Killing VC7debug files
+
+    *
+------------------------------------------------------------
 User: usher  Thu Jan 23 13:24:32 PST 2003
 G4Propagator
 
