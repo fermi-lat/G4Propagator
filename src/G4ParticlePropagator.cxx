@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Generator/src/G4ParticlePropagator.cxx,v 1.6 2002/07/05 19:34:18 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4ParticlePropagator.cxx,v 1.1.1.1 2003/01/23 21:24:32 usher Exp $
 //
 // Description: Geant4 class for particle transport management
 //
@@ -121,28 +121,6 @@ int G4ParticlePropagator::numberPlanesCrossed() const
 
 //Return the position at the end of tracking
 Point G4ParticlePropagator::position() const
-{
-  // Purpose and Method: Returns the position of the track at the end of
-  //                     tracking
-  // Inputs:  None
-  // Outputs:  a Point representing the final position
-  // Dependencies: None
-  // Restrictions and Caveats: None
-
-  Point final(0.,0.,0.);
-
-  if (getNumberSteps() > 0)
-    {
-      G4ThreeVector  stopPoint = getLastStep()->GetCoords();
-
-      final = Point(stopPoint.x(),stopPoint.y(),stopPoint.z());
-    }
-
-  return final;
-}
-
-//Return the position at the end of tracking
-Point G4ParticlePropagator::position(double s) const
 {
   // Purpose and Method: Returns the position of the track at the end of
   //                     tracking
