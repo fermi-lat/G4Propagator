@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.cxx,v 1.3 2003/02/20 23:12:58 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.cxx,v 1.4 2003/03/06 00:19:11 usher Exp $
 //
 // Description: Service for particle transport management
 //
@@ -11,7 +11,8 @@
 static ToolFactory<G4PropagatorTool> g4prop_factory;
 const IToolFactory& G4PropagatorToolFactory = g4prop_factory;
 
-IG4GeometrySvc*              G4PropagatorTool::geometrySvc           = 0;
+IG4GeometrySvc* G4PropagatorTool::geometrySvc    = 0;
+IPropagator*    G4PropagatorTool::propagatorTool = 0;
 
 G4PropagatorTool::G4PropagatorTool(const std::string& type, const std::string& name, const IInterface* parent) :
   AlgTool(type, name, parent)
@@ -26,8 +27,8 @@ G4PropagatorTool::G4PropagatorTool(const std::string& type, const std::string& n
   declareInterface<IPropagatorTool>(this);
 }
 
-  StatusCode G4PropagatorTool::initialize()
-  {
+StatusCode G4PropagatorTool::initialize()
+{
   MsgStream log(msgSvc(), name());
 
   log << MSG::INFO << "G4 Propagator Tool initializing now" << endreq;
@@ -42,6 +43,8 @@ G4PropagatorTool::G4PropagatorTool(const std::string& type, const std::string& n
   IG4GeometrySvc* gsv = dynamic_cast<IG4GeometrySvc*>(iService);
 
   geometrySvc = gsv;
+
+  StatusCode sc = toolSvc()->retrieveTool("G4PropagationTool", propagatorTool);
 
   log << MSG::INFO << "G4 Propagator Tool ready" << endreq;
 

@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.h,v 1.2 2003/02/20 23:12:58 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.h,v 1.3 2003/03/06 00:19:11 usher Exp $
 //
 
 /** 
@@ -12,6 +12,7 @@
 */
 
 #include "GlastSvc/Reco/IPropagatorTool.h"
+#include "GlastSvc/Reco/IPropagator.h"
 #include "G4Generator/IG4GeometrySvc.h"
 #include "G4ParticlePropagator.h"
 
@@ -35,6 +36,9 @@ class G4PropagatorTool : public AlgTool, virtual public IPropagatorTool
 
   /// This is needed for associating Geant4 volumes to Glast identifiers
   static IG4GeometrySvc* geometrySvc;
+
+  /// This is needed for associating Geant4 volumes to Glast identifiers
+  static IPropagator* propagatorTool;
   
  private:
 };
