@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: usher  Mon Apr 21 15:31:07 PDT 2003
+G4Propagator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx G4ParticlePropagator.h 
+	G4PropagatorTool.cxx G4PropagatorTool.h 
+	ParticleTransporter.cxx ParticleTransporter.h 
+Removed Files:
+      Tag: v1r1
+	TransportStepInfo.h 
+Log Message:
+1) Move TransportStepInfo into ParticleTranspoter class def
+2) G4PropagatorTool and G4ParticlePropagator now interface to G4PropagationTool
+
+    *
+------------------------------------------------------------
 User: usher  Thu Mar  6 10:31:39 PST 2003
 G4Propagator/doc
 
