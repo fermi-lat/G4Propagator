@@ -1,7 +1,8 @@
 /** @file release.notes
     @brief package G4Generator <pre>
-    $Id: release.notes,v 1.2 2003/01/23 22:16:59 usher Exp $
+    $Id: release.notes,v 1.3 2003/02/07 18:46:57 usher Exp $
 *
+ * v1r2    6-Mar-03 TU  Really first release version for general use
  * v0r0   23-Jan-03 TU  Inital version  
  * v1r0    7-Feb-03 TU  Tag first release version
 </pre>
