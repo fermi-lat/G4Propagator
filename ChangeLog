@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Mar  1 20:28:43 PST 2005
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Fix (again) active distance calculation, limit "outside" range to 400 mm (too small?)
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p3, operation: add
 Package: G4Propagator
