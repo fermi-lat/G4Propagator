@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.9 2004/07/22 03:39:19 lsrea Exp $
+    $Id: release.notes,v 1.9.2.1 2004/10/20 01:07:04 lsrea Exp $
  @verbatim
 
+ v1r2p4gr2 20-Oct-04 LSR  add <stdexecpt>... unix cares, windows doesn't
  v1r2p4gr1 19-Oct-04 LSR  throw exception for null pointer to G4 volume
  v1r2p4gr0 19-Oct-04 LSR  Branch for GlastRelease-v4r6
  v1r2p4 21-jul-04 LSR  Fix req. file according to Traudl's suggestion

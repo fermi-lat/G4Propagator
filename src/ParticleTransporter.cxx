@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.6 2004/02/17 23:35:36 mcenery Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.6.2.1 2004/10/20 01:07:04 lsrea Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -15,6 +15,7 @@
 
 #include <string>
 #include <algorithm>
+#include <stdexcept>
 
 //Constructor for the propagator class
 ParticleTransporter::ParticleTransporter(const G4TransportationManager* TransportationManager,
