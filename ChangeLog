@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Sun Feb 27 15:41:42 PST 2005
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx ParticleTransporter.cxx 
+	ParticleTransporter.h 
+Log Message:
+Further attempts at performance improvements. Also fix bug which zapped the active distance calculation. And fixed code which returned erroroneous active distance to silicon wafers.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p0, operation: add
 Package: G4Propagator
