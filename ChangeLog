@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Dec  2 16:58:47 PST 2004
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Implement the fix to the right version
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p2, operation: add
 Package: G4Propagator
