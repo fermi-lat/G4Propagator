@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.cxx,v 1.0 2002/07/05 19:34:18 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.h,v 1.1.1.1 2003/01/23 21:24:32 usher Exp $
 //
 
 /** 
@@ -24,6 +24,9 @@ class G4PropagatorTool : public AlgTool, virtual public IPropagatorTool
  public: 
 
   G4PropagatorTool(const std::string& type, const std::string& name, const IInterface* parent);
+
+  /// do stuff when set up by the ToolSvc
+  virtual StatusCode initialize();
 
   virtual ~G4PropagatorTool();
     
