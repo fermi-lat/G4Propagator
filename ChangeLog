@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: lsrea  Tue Oct 19 18:07:04 PDT 2004
+G4Propagator/cmt
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	requirements 
+Log Message:
+Prepare for tag v1r2p4gr1
+throw exception for null pointer to G4 volume
+fix (probably harmless) bug in initializing track parameters
+
+    *
+------------------------------------------------------------
 User: usher  Wed Sep  8 11:07:43 PDT 2004
 G4Propagator/src
 
