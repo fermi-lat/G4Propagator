@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: usher  Wed Jan 29 15:59:12 PST 2003
+G4Propagator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx G4ParticlePropagator.h 
+	ParticleTransporter.cxx ParticleTransporter.h 
+	TransportStepInfo.h 
+Log Message:
+Significant modifications to ParticleTransporter
+1) Find and get rid of memory leak
+2) New logic for stepping through volumes
+3) slight modification to interface
+Runs much faster now!
+
+    *
+------------------------------------------------------------
 User: usher  Mon Jan 27 16:40:13 PST 2003
 G4Propagator/src
 
