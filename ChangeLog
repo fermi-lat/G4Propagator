@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Dec 15 10:26:52 PST 2004
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Re-update to use the "new" TDS classes
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p2, operation: mov
 Package: G4Propagator
