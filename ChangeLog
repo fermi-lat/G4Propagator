@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sun Feb 13 14:50:50 PST 2005
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Apply a patch to catch problems with stepping over volume boundaries
+    *
+------------------------------------------------------------
 User: usher  Wed Feb  9 13:23:46 PST 2005
 G4Propagator/src
 
