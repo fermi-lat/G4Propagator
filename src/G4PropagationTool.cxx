@@ -37,7 +37,6 @@ class G4PropagationTool : public ParticleTransporter, public AlgTool, virtual pu
     virtual void setStepStart(const Point& startPos, const Vector& startDir);
     //! Tracking from initial parameters
     virtual void setStepStart(const Event::TkrFitPar& trackPar, const Event::TkrFitMatrix& trackCov, double z);
-
     //! Takes a step of distance given by arcLen
     virtual void step(double arcLen);
 
@@ -166,7 +165,7 @@ void G4PropagationTool::setStepStart(const Point& startPos, const Vector& startD
     // Dependencies: None
     // Restrictions and Caveats: None
 
-    m_trackPar = Event::TkrFitPar(startPos.x(),startDir.x(),startPos.y(),startDir.y());
+    m_trackPar = Event::TkrFitPar(startPos.x(),startDir.x()/startDir.z(),startPos.y(),startDir.y()/startDir.z());
     m_trackCov = Event::TkrFitMatrix(0);
     m_zCoord   = startPos.z();
 

@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.5 2003/06/16 17:28:04 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.6 2004/02/17 23:35:36 mcenery Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -67,6 +67,9 @@ void ParticleTransporter::setInitStep(const Point& start,  const Vector& dir)
   //Set the start point at the beginning of our list of volumes
   G4Navigator*       navigator = m_TransportationManager->GetNavigatorForTracking();
   G4VPhysicalVolume* pVolume   = navigator->LocateGlobalPointAndSetup(startPoint, 0, false);
+  if (!pVolume ) {
+      throw std::domain_error("ParticleTransporter initialized outside the known world!");
+  }
 
   //Record our starting point
   stepInfo.push_back(TransportStepInfo(startPoint, 0.));
