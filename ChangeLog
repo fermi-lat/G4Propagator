@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Feb 28 13:03:59 PST 2005
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Check for a pathological case: distanceToEdge can begin with an unreasonable arc length
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p2, operation: add
 Package: G4Propagator
