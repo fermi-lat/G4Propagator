@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Nov 26 09:41:56 PST 2004
+G4Propagator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Prepare interim tag for G4 6.2 patch 2 before changes to TkrRecon TDS classes
+    *
+------------------------------------------------------------
 User: usher  Sun Nov 21 20:20:55 PST 2004
 G4Propagator/src
 
