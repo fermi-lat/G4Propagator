@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb 19 14:32:29 PST 2004
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging gcc 3.3 fix
+    *
+------------------------------------------------------------
 User: mcenery  Tue Feb 17 15:35:36 PST 2004
 G4Propagator/src
 
