@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Mon Jan 27 16:40:13 PST 2003
+G4Propagator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx G4ParticlePropagator.h 
+	G4PropagatorTool.cxx 
+Log Message:
+General code cleanup before release
+
+    *
+------------------------------------------------------------
 User: usher  Fri Jan 24 12:58:37 PST 2003
 G4Propagator/src
 
