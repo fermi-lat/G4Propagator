@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Mon Jun 16 10:28:04 PDT 2003
+G4Propagator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Place test for transportationmanager in setup method. Helps prevent crashes 
+caused by initialization order problems. 
+
+    *
+------------------------------------------------------------
 User: lsrea  Wed Apr 23 13:42:26 PDT 2003
 G4Propagator/src
 
