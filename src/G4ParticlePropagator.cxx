@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4ParticlePropagator.cxx,v 1.2 2003/01/28 00:40:13 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4ParticlePropagator.cxx,v 1.3 2003/01/29 23:59:12 usher Exp $
 //
 // Description: Geant4 class for particle transport management
 //
@@ -32,15 +32,13 @@ G4ParticlePropagator* G4ParticlePropagator::instance()
 }
 
 //Constructor for the propagator class
-G4ParticlePropagator::G4ParticlePropagator(): ParticleTransporter(G4PropagatorTool::TransportationManager)
+G4ParticlePropagator::G4ParticlePropagator(): ParticleTransporter(G4PropagatorTool::geometrySvc->getTransportationManager())
 {
   // Purpose and Method:  Instantiates if it doesn't exist
   // Inputs:  None
   // Outputs:  None
   // Dependencies: Requires that the Geant4 Run Manager has been instantiated
   // Restrictions and Caveats:  See above
-
-  m_IdMap = G4PropagatorTool::VolIdentMap;
 
   return;
 }
@@ -94,7 +92,8 @@ idents::VolumeIdentifier G4ParticlePropagator::constructId(G4VPhysicalVolume* pV
   while(pVolume->GetMother())
     {
       // Look up the identifier for this volume
-      VolumeIdentifier id = (*m_IdMap)[pVolume];
+      //VolumeIdentifier id = (*m_IdMap)[pVolume];
+      VolumeIdentifier id = G4PropagatorTool::geometrySvc->getVolumeIdent(pVolume);
 
       // Add this volume's identifier to our total id
       ret.prepend(id);
