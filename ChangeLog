@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sun Nov 21 20:20:55 PST 2004
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Fix bug in returning track parameters at end of step
+    *
+------------------------------------------------------------
 User: usher  Tue Nov  9 12:39:18 PST 2004
 G4Propagator/src
 
