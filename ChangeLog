@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sun Feb 27 17:07:42 PST 2005
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Ok, bug was in the "constructId" call... somehow it compiled with not all the correct arguements. Appears to be fixed now.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p1, operation: add
 Package: G4Propagator
