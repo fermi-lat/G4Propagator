@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.7 2004/09/08 18:07:43 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.8 2004/11/09 20:39:18 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -501,7 +501,8 @@ double ParticleTransporter::distanceToEdge(const Vector& dir) const
       //**G4ThreeVector trackDir = navigator->ComputeLocalAxis(curDir);
       const G4AffineTransform& globalToLocal = navigator->GetGlobalToLocalTransform();
       G4ThreeVector trackPos = globalToLocal.TransformPoint(curPoint);
-      G4ThreeVector trackDir = globalToLocal.IsRotated() ? globalToLocal.TransformAxis(curDir) : curDir;
+      G4ThreeVector trackDir = curDir;
+      if (globalToLocal.IsRotated()) trackDir = globalToLocal.TransformAxis(curDir);
 
       //This calculates the distance along the direction of the track to the 
       //boundary of the current volume
