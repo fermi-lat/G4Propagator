@@ -1,4 +1,116 @@
 ------------------------------------------------------------
+User: usher  Sun Nov 21 20:20:55 PST 2004
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Fix bug in returning track parameters at end of step
+    *
+------------------------------------------------------------
+User: usher  Tue Nov  9 12:39:18 PST 2004
+G4Propagator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx G4PropagationTool.cxx 
+	ParticleTransporter.cxx 
+Log Message:
+Modifications to the Propagator to switch to IPropagator interface using TkrTrackParams instead of old tracker classes
+    *
+------------------------------------------------------------
+User: lsrea  Wed Oct 20 11:19:31 PDT 2004
+G4Propagator/src
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	ParticleTransporter.cxx 
+Log Message:
+Prepare for tag v1r2p5gr2; add <stdexcept> for domain_error
+
+    *
+------------------------------------------------------------
+User: lsrea  Wed Oct 20 11:19:31 PDT 2004
+G4Propagator/doc
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	release.notes 
+Log Message:
+Prepare for tag v1r2p5gr2; add <stdexcept> for domain_error
+
+    *
+------------------------------------------------------------
+User: lsrea  Wed Oct 20 11:19:31 PDT 2004
+G4Propagator/cmt
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	requirements 
+Log Message:
+Prepare for tag v1r2p5gr2; add <stdexcept> for domain_error
+
+    *
+------------------------------------------------------------
+User: lsrea  Tue Oct 19 18:07:04 PDT 2004
+G4Propagator/src
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	G4PropagationTool.cxx ParticleTransporter.cxx 
+Log Message:
+Prepare for tag v1r2p4gr1
+throw exception for null pointer to G4 volume
+fix (probably harmless) bug in initializing track parameters
+
+    *
+------------------------------------------------------------
+User: lsrea  Tue Oct 19 18:07:04 PDT 2004
+G4Propagator/doc
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	release.notes 
+Log Message:
+Prepare for tag v1r2p4gr1
+throw exception for null pointer to G4 volume
+fix (probably harmless) bug in initializing track parameters
+
+    *
+------------------------------------------------------------
+User: lsrea  Tue Oct 19 18:07:04 PDT 2004
+G4Propagator/cmt
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	requirements 
+Log Message:
+Prepare for tag v1r2p4gr1
+throw exception for null pointer to G4 volume
+fix (probably harmless) bug in initializing track parameters
+
+    *
+------------------------------------------------------------
+User: usher  Wed Sep  8 11:07:43 PDT 2004
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx ParticleTransporter.cxx 
+	ParticleTransporter.h 
+Log Message:
+First round of updates needed for upgrading to Geant4 v6.2
+
+    *
+------------------------------------------------------------
+User: usher  Wed Sep  8 11:07:43 PDT 2004
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+First round of updates needed for upgrading to Geant4 v6.2
+
+    *
+------------------------------------------------------------
 User: lsrea  Wed Jul 21 20:39:19 PDT 2004
 G4Propagator/doc
 
