@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: lsrea  Wed Oct 20 11:19:31 PDT 2004
+G4Propagator/doc
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	release.notes 
+Log Message:
+Prepare for tag v1r2p5gr2; add <stdexcept> for domain_error
+
+    *
+------------------------------------------------------------
+User: lsrea  Wed Oct 20 11:19:31 PDT 2004
 G4Propagator/cmt
 
 Modified Files:
