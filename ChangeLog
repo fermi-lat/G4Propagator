@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: usher  Wed Mar  5 16:19:11 PST 2003
+G4Propagator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx G4ParticlePropagator.h 
+	G4PropagatorTool.cxx G4PropagatorTool.h 
+Log Message:
+Modifications needed to adjust to G4GeometrySvc's new method for associating volumes
+to their identifiers. 
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Feb 27 07:33:39 PST 2003
 G4Propagator/cmt
 
