@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: lsrea  Tue Oct 19 18:07:04 PDT 2004
+G4Propagator/src
+
+Modified Files:
+      Tag: GlastRelease-v4r6
+	G4PropagationTool.cxx ParticleTransporter.cxx 
+Log Message:
+Prepare for tag v1r2p4gr1
+throw exception for null pointer to G4 volume
+fix (probably harmless) bug in initializing track parameters
+
+    *
+------------------------------------------------------------
+User: lsrea  Tue Oct 19 18:07:04 PDT 2004
 G4Propagator/doc
 
 Modified Files:
