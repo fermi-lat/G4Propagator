@@ -1,4 +1,58 @@
 ------------------------------------------------------------
+User: usher  Thu Jan 23 13:24:32 PST 2003
+G4Propagator
+
+Log Message:
+Importing new Propagator package based on Geant4
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0r0
+		
+N G4Propagator/.cvsignore
+N G4Propagator/ChangeLog
+N G4Propagator/cmt/.cvsignore
+N G4Propagator/cmt/requirements
+N G4Propagator/doc/release.notes
+N G4Propagator/src/G4ParticlePropagator.cxx
+N G4Propagator/src/G4ParticlePropagator.h
+N G4Propagator/src/G4PropagatorSvc.cxx
+N G4Propagator/src/G4PropagatorSvc.h
+N G4Propagator/src/G4PropagatorTool.cxx
+N G4Propagator/src/G4PropagatorTool.h
+N G4Propagator/src/mainpage.h
+N G4Propagator/src/ParticleTransporter.cxx
+N G4Propagator/src/ParticleTransporter.h
+N G4Propagator/src/TransportStepInfo.h
+N G4Propagator/src/Dll/G4Propagator_dll.cxx
+N G4Propagator/src/Dll/G4Propagator_load.cxx
+N G4Propagator/src/test/G4TestAlg.cxx
+N G4Propagator/src/test/jobOptions.txt
+N G4Propagator/src/test/test_sources.xml
+N G4Propagator/VC7debug/G4Propagator.arc
+N G4Propagator/VC7debug/G4Propagator.dll
+N G4Propagator/VC7debug/G4Propagator.exp
+N G4Propagator/VC7debug/G4Propagator.ilk
+N G4Propagator/VC7debug/G4Propagator.lib
+N G4Propagator/VC7debug/G4Propagator.map
+N G4Propagator/VC7debug/G4Propagator.pdb
+N G4Propagator/VC7debug/G4Propagator.shstamp
+N G4Propagator/VC7debug/G4Propagator.stamp
+N G4Propagator/VC7debug/test_G4Propagator.ilk
+N G4Propagator/VC7debug/test_G4Propagator.map
+N G4Propagator/VC7debug/test_G4Propagator.pdb
+N G4Propagator/VC7debug/G4Propagator/BuildLog.htm
+N G4Propagator/VC7debug/G4Propagator/vc70.idb
+N G4Propagator/VC7debug/G4Propagator/vc70.pdb
+N G4Propagator/VC7debug/test_G4Propagator/BuildLog.htm
+N G4Propagator/VC7debug/test_G4Propagator/vc70.idb
+N G4Propagator/VC7debug/test_G4Propagator/vc70.pdb
+
+No conflicts created by this import
+
+    *
+------------------------------------------------------------
 User: als  Thu Jan  9 17:05:33 PST 2003
 G4Generator/cmt
 
