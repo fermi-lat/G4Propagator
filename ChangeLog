@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: usher  Thu Jan 23 13:48:30 PST 2003
+G4Propagator/VC7debug
+
+Removed Files:
+	G4Propagator.arc G4Propagator.dll G4Propagator.exp 
+	G4Propagator.ilk G4Propagator.lib G4Propagator.map 
+	G4Propagator.pdb G4Propagator.shstamp G4Propagator.stamp 
+	test_G4Propagator.ilk test_G4Propagator.map 
+	test_G4Propagator.pdb 
+Log Message:
+killing VC7debug files
+
+    *
+------------------------------------------------------------
 User: usher  Thu Jan 23 13:47:56 PST 2003
 G4Propagator/VC7debug/test_G4Propagator
 
