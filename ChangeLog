@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: lsrea  Wed Jul 21 20:39:19 PDT 2004
+G4Propagator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fix req. file; prepare for tag v1r2p4
+
+    *
+------------------------------------------------------------
+User: lsrea  Wed Jul 21 20:39:19 PDT 2004
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix req. file; prepare for tag v1r2p4
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Jun 17 10:36:33 PDT 2004
 G4Propagator/cmt
 
