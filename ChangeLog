@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: mcenery  Tue Feb 17 15:35:36 PST 2004
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Small change for compatibility with gcc3.3
+
+    *
+------------------------------------------------------------
 User: usher  Mon Jun 16 10:28:04 PDT 2003
 G4Propagator/src
 
