@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Mon Apr 21 15:31:08 PDT 2003
+G4Propagator/src/Dll
+
+Modified Files:
+	G4Propagator_load.cxx 
+Log Message:
+1) Move TransportStepInfo into ParticleTranspoter class def
+2) G4PropagatorTool and G4ParticlePropagator now interface to G4PropagationTool
+
+    *
+------------------------------------------------------------
 User: usher  Mon Apr 21 15:31:07 PDT 2003
 G4Propagator/src
 
