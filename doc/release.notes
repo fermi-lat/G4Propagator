@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.13 2005/01/28 20:01:41 lsrea Exp $
+    $Id: release.notes,v 1.14 2005/02/20 18:31:11 usher Exp $
  @verbatim
 
+ v2r0p0 24-Feb-05 TU   Revamp to reduce calls to G4 Locate and Global setup
  v2r0p2 20-Feb-05 TU   Fix ParticlePropagator for "stuck" particles
  v2r0p1 28-Jan-05 LSR  More info on exception
  v2r0p0 16-Dec-04 TU   Upgrade to new Tracker TDS classes
