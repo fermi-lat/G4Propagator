@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb 27 07:33:39 PST 2003
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+remove version dependence of FluxSvc, only used for test program.
+    *
+------------------------------------------------------------
 User: burnett  Thu Feb 20 15:12:58 PST 2003
 G4Propagator/src
 
