@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Feb 24 14:19:32 PST 2005
+G4Propagator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Revamp particle transporter to reduce significantly calls to G4 setup code.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r0p2, operation: add
 Package: G4Propagator
