@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Dec  2 15:42:54 PST 2004
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Fix problem with trying to identify volume when on boundary
+    *
+------------------------------------------------------------
 User: usher  Tue Nov 30 17:50:35 PST 2004
 G4Propagator/src
 
