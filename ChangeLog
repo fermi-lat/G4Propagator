@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Tue Apr 22 11:58:06 PDT 2003
+G4Propagator/src
+
+Modified Files:
+	G4PropagatorTool.cxx 
+Log Message:
+fixed unix warning
+
+    *
+------------------------------------------------------------
 User: usher  Tue Apr 22 11:15:29 PDT 2003
 G4Propagator/src
 
