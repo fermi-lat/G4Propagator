@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Nov 30 17:06:01 PST 2004
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+mod for going "up"
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r3p1, operation: add
 Package: G4Propagator
