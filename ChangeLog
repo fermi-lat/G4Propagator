@@ -1,0 +1,2912 @@
+------------------------------------------------------------
+User: als  Thu Jan  9 17:05:33 PST 2003
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+sandbox merge
+
+version v4r5
+use statement updates
+
+    *
+------------------------------------------------------------
+User: lsrea  Sat Dec 21 17:49:37 PST 2002
+G4Generator/src
+
+Modified Files:
+	ParticleTransporter.cxx ParticleTransporter.h 
+Log Message:
+Added methods for insideActiveLocalX/Y
+
+    *
+------------------------------------------------------------
+User: lsrea  Thu Dec 19 18:18:53 PST 2002
+G4Generator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Fix tiny bug... affected the corners of the wafer.
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec  2 15:44:02 PST 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+prepare for tag
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec  2 15:44:02 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+prepare for tag
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec  2 15:37:23 PST 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx DisplayManager.h G4Generator.cxx 
+Log Message:
+
+implement separate primary track display option.
+    *
+------------------------------------------------------------
+User: burnett  Wed Nov  6 11:21:19 PST 2002
+G4Generator/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+
+tagging v4r4p1
+    *
+------------------------------------------------------------
+User: burnett  Wed Nov  6 11:21:19 PST 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r4p1
+    *
+------------------------------------------------------------
+User: burnett  Wed Nov  6 11:21:18 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r4p1
+    *
+------------------------------------------------------------
+User: riccardo  Wed Nov  6 10:37:24 PST 2002
+G4Generator/src
+
+Modified Files:
+	PrimaryGeneratorAction.cxx 
+Log Message:
+Added a conversion from Gev/c^2 to AMU for the mass of ions in the PrimaryGeneratorAction class
+    *
+------------------------------------------------------------
+User: riccardo  Wed Nov  6 08:33:20 PST 2002
+G4Generator/src
+
+Modified Files:
+	PrimaryGeneratorAction.cxx PrimaryGeneratorAction.h 
+Log Message:
+Introduced changes to PrimaryGeneratorAction to accomodate Ions generation
+    *
+------------------------------------------------------------
+User: burnett  Tue Nov  5 07:43:26 PST 2002
+G4Generator/src
+
+Modified Files:
+	McParticleManager.cxx 
+Log Message:
+fix warning
+    *
+------------------------------------------------------------
+User: riccardo  Tue Nov  5 01:02:11 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx PrimaryGeneratorAction.cxx 
+	PrimaryGeneratorAction.h 
+Log Message:
+Small refactoring of the PrimaryGeneratorAction class; now it takes an McParticle to set the primary parameters. This is the first step for the ions introduction.
+    *
+------------------------------------------------------------
+User: burnett  Fri Nov  1 21:15:44 PST 2002
+G4Generator/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+
+use proper description of joboption parameters
+
+    *
+------------------------------------------------------------
+User: kuss  Fri Oct 25 01:00:50 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Geometry.cxx 
+Log Message:
+for gcc3, apply a cast
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Oct 10 02:40:27 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r4
+    *
+------------------------------------------------------------
+User: burnett  Thu Oct 10 02:40:26 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r4
+    *
+------------------------------------------------------------
+User: burnett  Tue Oct  8 23:13:53 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	test_sources.xml 
+Log Message:
+no, it is title
+    *
+------------------------------------------------------------
+User: burnett  Tue Oct  8 22:39:00 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	test_sources.xml 
+Log Message:
+add name to source lib
+    *
+------------------------------------------------------------
+User: kyoung  Tue Oct  8 15:15:15 PDT 2002
+G4Generator/src/Dll
+
+Modified Files:
+	G4Generator_load.cxx 
+Log Message:
+Add G4GeneratorRandom tool
+    *
+------------------------------------------------------------
+User: kyoung  Tue Oct  8 15:15:14 PDT 2002
+G4Generator/src
+
+Added Files:
+	G4GeneratorRandom.cxx 
+Log Message:
+Add G4GeneratorRandom tool
+    *
+------------------------------------------------------------
+User: riccardo  Fri Oct  4 08:05:17 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Fixed a bug in the pruneCal mode
+    *
+------------------------------------------------------------
+User: riccardo  Fri Oct  4 08:05:16 PDT 2002
+G4Generator/src
+
+Modified Files:
+	McParticleManager.cxx 
+Log Message:
+Fixed a bug in the pruneCal mode
+    *
+------------------------------------------------------------
+User: riccardo  Tue Sep 24 09:59:47 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h McParticleManager.cxx 
+	McParticleManager.h PosDetectorManager.cxx TrackingAction.cxx 
+Log Message:
+Added a new mcTreeMode to G4Generator (pruneCal) to save an McParticleTree full in the TKR and pruned in the CAL. To be tested
+    *
+------------------------------------------------------------
+User: riccardo  Tue Sep 24 09:58:50 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Added a new mcTreeMode to G4Generator (pruneCal) to save an McParticleTree full in the TKR and pruned in the CAL. To be tested
+    *
+------------------------------------------------------------
+User: riccardo  Tue Sep 24 09:57:46 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Added a new mcTreeMode to G4Generator (pruneCal) to save an McParticleTree full in the TKR and pruned in the CAL. To be tested
+    *
+------------------------------------------------------------
+User: burnett  Fri Sep 20 09:46:11 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	test_sources.xml 
+Log Message:
+
+specify "GeV" in source xml
+tagging v4r3p4
+
+    *
+------------------------------------------------------------
+User: burnett  Fri Sep 20 09:46:11 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+specify "GeV" in source xml
+tagging v4r3p4
+
+    *
+------------------------------------------------------------
+User: burnett  Fri Sep 20 09:46:10 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+specify "GeV" in source xml
+tagging v4r3p4
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Sep 10 17:41:02 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+patch for GlastSvc and Event change
+    *
+------------------------------------------------------------
+User: burnett  Tue Sep 10 17:41:01 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+patch for GlastSvc and Event change
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  4 09:49:07 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r3p2
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  4 09:49:06 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r3p2
+    *
+------------------------------------------------------------
+User: burnett  Wed Sep  4 08:06:47 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h PhysicsList.cxx PhysicsList.h 
+	RunManager.cxx RunManager.h mainpage.h 
+Log Message:
+
+Define a new propery called DefaultCutValue; with default 0.1 mm. 
+Pass the value via the RunManager and PhysicsList constructors to G4.
+
+    *
+------------------------------------------------------------
+User: burnett  Sun Sep  1 13:42:00 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+use new Geant4Runtime package to pass G4 runtime settings to clients.
+    *
+------------------------------------------------------------
+User: burnett  Sun Sep  1 13:41:59 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+use new Geant4Runtime package to pass G4 runtime settings to clients.
+    *
+------------------------------------------------------------
+User: burnett  Thu Aug 15 09:54:52 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r3
+    *
+------------------------------------------------------------
+User: burnett  Thu Aug 15 09:54:51 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r3
+    *
+------------------------------------------------------------
+User: riccardo  Mon Aug 12 06:17:17 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorManager.cxx DetectorManager.h 
+	IntDetectorManager.cxx IntDetectorManager.h 
+	PosDetectorManager.cxx PosDetectorManager.h 
+Log Message:
+Changes to use the new prefix identifier stuff in the case the topVolume is not the LAT; also added the energy ot the particle to the McPositionHit filling
+    *
+------------------------------------------------------------
+User: riccardo  Fri Jul 26 09:24:23 PDT 2002
+G4Generator/src
+
+Modified Files:
+	MuonPhysics.cxx 
+Log Message:
+Removed (commented) the Mu- Capture at Rest process in the physics table
+    *
+------------------------------------------------------------
+User: riccardo  Fri Jul 26 09:23:18 PDT 2002
+G4Generator/src
+
+Modified Files:
+	PosDetectorManager.cxx 
+Log Message:
+Added the global entry and exit point to the McPositionHit stored in the PosDetectorManager
+    *
+------------------------------------------------------------
+User: burnett  Thu Jul 25 02:59:30 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r2
+    *
+------------------------------------------------------------
+User: burnett  Thu Jul 25 02:59:30 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r2
+    *
+------------------------------------------------------------
+User: riccardo  Thu Jul 18 04:24:24 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Changes to jobOptions.txt 
+
+    *
+------------------------------------------------------------
+User: riccardo  Thu Jul 18 04:24:24 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx 
+Log Message:
+Changes to jobOptions.txt 
+
+    *
+------------------------------------------------------------
+User: riccardo  Thu Jul 18 03:14:44 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+Added a new mechanism to save only a minimal tree of McParticle in the TDS; it is now possible
+to choose between a full tree or a minimal tree from the jobOptions file. Also added a new McTrajectory
+collection in the TDS; also this collection is optional
+
+
+    *
+------------------------------------------------------------
+User: riccardo  Thu Jul 18 03:14:43 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h IntDetectorManager.cxx 
+	IntDetectorManager.h McParticleManager.cxx McParticleManager.h 
+	PosDetectorManager.cxx RunManager.cxx RunManager.h 
+	TrackingAction.cxx 
+Log Message:
+Added a new mechanism to save only a minimal tree of McParticle in the TDS; it is now possible
+to choose between a full tree or a minimal tree from the jobOptions file. Also added a new McTrajectory
+collection in the TDS; also this collection is optional
+
+
+    *
+------------------------------------------------------------
+User: riccardo  Thu Jul 18 03:14:43 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added a new mechanism to save only a minimal tree of McParticle in the TDS; it is now possible
+to choose between a full tree or a minimal tree from the jobOptions file. Also added a new McTrajectory
+collection in the TDS; also this collection is optional
+
+
+    *
+------------------------------------------------------------
+User: usher  Fri Jul  5 12:47:39 PDT 2002
+G4Generator/src
+
+Modified Files:
+	PosDetectorManager.cxx 
+Log Message:
+I did not intend to make any changes to this file, putting back to original state
+
+    *
+------------------------------------------------------------
+User: usher  Fri Jul  5 12:34:18 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx G4PropagatorSvc.cxx 
+	ParticleTransporter.cxx ParticleTransporter.h 
+	PosDetectorManager.cxx 
+Added Files:
+	G4PropagatorSvc.h 
+Log Message:
+Modifications of G4Propagator routine:
+1) Now runs soley off Geant4 geometry using G4Navigator only (no physics initialization)
+2) Activated the "insideActiveArea" method
+3) Updated covariance matrix calculation to match KalParticle
+
+    *
+------------------------------------------------------------
+User: usher  Tue Jun 25 08:47:14 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx ParticleTransporter.cxx 
+	ParticleTransporter.h 
+Log Message:
+First set of modifications to propagator to fix problems with geometry changes. 
+Also, add "print" routine for outputting volume information
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Jun 20 07:14:58 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tagging v4r1p6
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Jun 20 07:14:58 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tagging v4r1p6
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Jun 20 07:13:23 PDT 2002
+G4Generator/src
+
+Modified Files:
+	McParticleManager.cxx 
+Log Message:
+
+remove arbitrary and temporary cut on the number of McParticles, to fix memory leak.
+Could not just delete the remainder, due to use of link from McIntegrating hit objects
+    *
+------------------------------------------------------------
+User: burnett  Tue Jun 18 15:42:22 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx 
+Log Message:
+
+put neutrals on separate display button -- tag it v4r1p5
+    *
+------------------------------------------------------------
+User: burnett  Tue Jun 18 15:42:22 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+put neutrals on separate display button -- tag it v4r1p5
+    *
+------------------------------------------------------------
+User: burnett  Tue Jun 18 15:42:21 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+put neutrals on separate display button -- tag it v4r1p5
+    *
+------------------------------------------------------------
+User: burnett  Fri Jun  7 11:30:13 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+make test program a proper one.
+clean out lots of redundant use statements.
+tagging v4r1p4
+    *
+------------------------------------------------------------
+User: burnett  Fri Jun  7 11:30:13 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+make test program a proper one.
+clean out lots of redundant use statements.
+tagging v4r1p4
+    *
+------------------------------------------------------------
+User: burnett  Fri Jun  7 11:30:13 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+make test program a proper one.
+clean out lots of redundant use statements.
+tagging v4r1p4
+    *
+------------------------------------------------------------
+User: usher  Wed Jun  5 14:26:46 PDT 2002
+G4Generator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Modify minStep calculation to calculate arclength to exit at z plane. 
+**This may need to be revisited in the future**
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Jun  3 09:22:06 PDT 2002
+G4Generator/src
+
+Modified Files:
+	PosDetectorManager.cxx 
+Log Message:
+Modified PosDetectorManager; McPositionHit are now associated to StdHepId (integer) and no more to the McParticle pointer
+    *
+------------------------------------------------------------
+User: burnett  Sat Jun  1 17:49:16 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx 
+Log Message:
+
+move display buttons to sub menu -- v4r1p3
+    *
+------------------------------------------------------------
+User: burnett  Sat Jun  1 17:49:15 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+move display buttons to sub menu -- v4r1p3
+    *
+------------------------------------------------------------
+User: burnett  Sat Jun  1 17:49:15 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+move display buttons to sub menu -- v4r1p3
+    *
+------------------------------------------------------------
+User: usher  Tue May 28 14:19:28 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx 
+Log Message:
+Fixes the completely incorrect radlen calculation
+
+    *
+------------------------------------------------------------
+User: burnett  Sun May 26 11:28:48 PDT 2002
+G4Generator/src
+
+Modified Files:
+	IntDetectorManager.cxx PosDetectorManager.cxx 
+Log Message:
+remove debug output
+    *
+------------------------------------------------------------
+User: burnett  Sun May 26 10:47:34 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r1p2
+    *
+------------------------------------------------------------
+User: burnett  Sun May 26 10:47:34 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r1p2
+    *
+------------------------------------------------------------
+User: burnett  Sun May 26 08:07:24 PDT 2002
+G4Generator/src
+
+Modified Files:
+	McParticleManager.cxx 
+Log Message:
+use EventModel, cut number of particles
+    *
+------------------------------------------------------------
+User: lubrano  Fri May 24 08:33:54 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Added the Bari Alg and the path to read the file with currents
+
+    *
+------------------------------------------------------------
+User: riccardo  Fri May 24 05:48:40 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.cxx IntDetectorManager.cxx 
+Log Message:
+Fixed global to local transformation in the IntDetectorManager for hits
+position used in the momentum calculation
+
+
+    *
+------------------------------------------------------------
+User: burnett  Thu May 23 20:24:09 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.cxx PosDetectorManager.cxx 
+Log Message:
+fix bad assumption about G4 3-d transformations
+    *
+------------------------------------------------------------
+User: riccardo  Thu May 23 02:55:14 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Added a sign reversal for rotation in G4Geometry to be consistent with rotations
+conventions. Fixed an error in the McParticle tree building for which there were two
+primaries in the tree.
+
+
+    *
+------------------------------------------------------------
+User: riccardo  Thu May 23 02:55:14 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Geometry.cxx 
+Log Message:
+Added a sign reversal for rotation in G4Geometry to be consistent with rotations
+conventions. Fixed an error in the McParticle tree building for which there were two
+primaries in the tree.
+
+
+    *
+------------------------------------------------------------
+User: burnett  Mon May 20 13:23:53 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx G4Geometry.h 
+Log Message:
+add output do summarize the number of logical volumes created
+    *
+------------------------------------------------------------
+User: burnett  Thu May 16 09:07:23 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r1p1
+    *
+------------------------------------------------------------
+User: burnett  Thu May 16 09:07:23 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r1p1
+    *
+------------------------------------------------------------
+User: riccardo  Wed May 15 05:03:16 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Small fix for the new McParticle
+
+    *
+------------------------------------------------------------
+User: riccardo  Wed May 15 05:03:16 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx TrackingAction.cxx 
+Log Message:
+Small fix for the new McParticle
+
+    *
+------------------------------------------------------------
+User: burnett  Sat May 11 15:48:39 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix so clients do not see the G4 libs when linking
+    *
+------------------------------------------------------------
+User: burnett  Sat May 11 15:48:39 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix so clients do not see the G4 libs when linking
+    *
+------------------------------------------------------------
+User: burnett  Fri May 10 19:39:04 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+fix the source selection for G4test: G4Generator no longer "knows" the source.
+    *
+------------------------------------------------------------
+User: burnett  Fri May 10 12:24:33 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.h IntDetectorManager.h 
+Log Message:
+
+tagging v4r0 after conversion to Event
+    *
+------------------------------------------------------------
+User: burnett  Fri May 10 12:24:32 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+tagging v4r0 after conversion to Event
+    *
+------------------------------------------------------------
+User: burnett  Fri May 10 12:24:32 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v4r0 after conversion to Event
+    *
+------------------------------------------------------------
+User: richard  Fri May 10 11:06:03 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx 
+Log Message:
+GlastEvent namespace change
+    *
+------------------------------------------------------------
+User: richard  Fri May 10 11:05:10 PDT 2002
+G4Generator/src
+
+Modified Files:
+	PosDetectorManager.h PosDetectorManager.cxx 
+	IntDetectorManager.h IntDetectorManager.cxx TrackingAction.cxx 
+	McParticleManager.h McParticleManager.cxx DetectorManager.cxx 
+Log Message:
+GlastEvent namespace change
+    *
+------------------------------------------------------------
+User: burnett  Sun May  5 11:16:34 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	test_sources.xml 
+Log Message:
+move the slanted muon over a bit
+    *
+------------------------------------------------------------
+User: burnett  Thu May  2 05:22:24 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	test_sources.xml 
+Log Message:
+
+Make the Gaudi log file available for summary output from the geometry;
+fix memory leak by deleting the visitors
+make default mode the same as GlastDetSvc.
+add a test muon at an angle
+tag v3r5
+    *
+------------------------------------------------------------
+User: burnett  Thu May  2 05:22:24 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4Generator.cxx G4PropagatorSvc.cxx RunManager.cxx 
+	RunManager.h 
+Log Message:
+
+Make the Gaudi log file available for summary output from the geometry;
+fix memory leak by deleting the visitors
+make default mode the same as GlastDetSvc.
+add a test muon at an angle
+tag v3r5
+    *
+------------------------------------------------------------
+User: burnett  Thu May  2 05:22:23 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+Make the Gaudi log file available for summary output from the geometry;
+fix memory leak by deleting the visitors
+make default mode the same as GlastDetSvc.
+add a test muon at an angle
+tag v3r5
+    *
+------------------------------------------------------------
+User: burnett  Thu May  2 05:22:23 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+Make the Gaudi log file available for summary output from the geometry;
+fix memory leak by deleting the visitors
+make default mode the same as GlastDetSvc.
+add a test muon at an angle
+tag v3r5
+    *
+------------------------------------------------------------
+User: burnett  Wed May  1 19:07:23 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	test_sources.xml 
+Log Message:
+remove FluxSvc
+    *
+------------------------------------------------------------
+User: burnett  Wed May  1 19:07:23 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h 
+Log Message:
+remove FluxSvc
+    *
+------------------------------------------------------------
+User: burnett  Sun Apr 28 21:55:10 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx 
+Log Message:
+
+remove factors for mm and GeV conversion from FluxAlg
+    *
+------------------------------------------------------------
+User: burnett  Sun Apr 28 21:55:10 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+remove factors for mm and GeV conversion from FluxAlg
+    *
+------------------------------------------------------------
+User: burnett  Sun Apr 28 21:55:09 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+remove factors for mm and GeV conversion from FluxAlg
+    *
+------------------------------------------------------------
+User: burnett  Sat Apr 20 14:30:03 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx 
+Log Message:
+set vertex from TDS
+    *
+------------------------------------------------------------
+User: riccardo  Sat Apr 20 07:03:24 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+ready for tag v3r4
+    *
+------------------------------------------------------------
+User: riccardo  Sat Apr 20 03:40:10 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4ParticlePropagator.cxx G4PropagatorSvc.cxx 
+	ParticleTransporter.cxx mainpage.h 
+Log Message:
+Comments for the code review and some formatting issues solved (not all)
+
+    *
+------------------------------------------------------------
+User: riccardo  Sat Apr 20 03:18:34 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.h EMPhysics.cxx EMPhysics.h G4Generator.h 
+	G4ParticlePropagator.cxx G4PropagatorSvc.cxx 
+	GeneralPhysics.cxx GeneralPhysics.h HadronPhysics.cxx 
+	HadronPhysics.h IonPhysics.cxx IonPhysics.h MuonPhysics.cxx 
+	MuonPhysics.h ParticleTransporter.cxx PhysicsList.cxx 
+	UIsession.h mainpage.h 
+Log Message:
+More comments for code review
+
+    *
+------------------------------------------------------------
+User: riccardo  Fri Apr 19 05:51:31 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	DisplayManager.cxx G4Generator.cxx G4Geometry.cxx 
+	IntDetectorManager.cxx McParticleManager.cxx 
+	PosDetectorManager.cxx RunManager.cxx RunManager.h 
+	TransportStepInfo.h 
+Log Message:
+Solved minor warnings in the gcc compilation under Linux
+
+    *
+------------------------------------------------------------
+User: riccardo  Fri Apr 19 00:44:42 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorManager.cxx 
+	DisplayManager.cxx EMPhysics.h G4Generator.cxx G4Generator.h 
+	G4Geometry.cxx G4Media.cxx GeneralPhysics.h HadronPhysics.cxx 
+	IntDetectorManager.cxx IonPhysics.cxx McParticleManager.cxx 
+	MuonPhysics.cxx PosDetectorManager.cxx 
+	PrimaryGeneratorAction.cxx RunManager.cxx TrackingAction.cxx 
+	mainpage.h 
+Log Message:
+Added more comments to the implementation files for the incoming code review
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 18 20:56:30 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4Generator.cxx G4Generator.h G4PropagatorSvc.cxx 
+	ParticleTransporter.h RunManager.cxx RunManager.h 
+Log Message:
+Provide for specifying the geometry mode (recon or propagate, for example) from the 
+properties of G4Generator. (The property name is "geometryMode").
+
+    *
+------------------------------------------------------------
+User: riccardo  Thu Apr 18 05:39:07 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorManager.cxx 
+	DisplayManager.cxx G4Generator.cxx G4Geometry.cxx G4Media.cxx 
+	G4ParticlePropagator.h IntDetectorManager.cxx 
+	McParticleManager.cxx ParticleTransporter.h PhysicsList.cxx 
+	PosDetectorManager.cxx PrimaryGeneratorAction.cxx 
+	RunManager.cxx TrackingAction.cxx TransportStepInfo.h 
+	mainpage.h 
+Log Message:
+Some new comments (not complete) in the implementation files for the incoming code review
+
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 17 21:32:54 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+allow possibility to find primary particle already on TDS. 
+G4Test has (commented out) code to test it.
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 17 21:32:54 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h McParticleManager.cxx 
+Log Message:
+
+allow possibility to find primary particle already on TDS. 
+G4Test has (commented out) code to test it.
+    *
+------------------------------------------------------------
+User: burnett  Wed Apr 17 21:22:04 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update required version of GlastSvc
+    *
+------------------------------------------------------------
+User: riccardo  Wed Apr 17 01:34:15 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	G4TestAlg.cxx 
+Log Message:
+Lots of small changes to fix code conventions (naming and style); added doxygen comments to almost all 
+the header; first steps to prepare for code review release
+
+    *
+------------------------------------------------------------
+User: riccardo  Wed Apr 17 01:34:15 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.h DetectorManager.cxx DetectorManager.h 
+	DisplayManager.cxx DisplayManager.h EMPhysics.cxx 
+	G4Generator.cxx G4Generator.h G4Geometry.cxx G4Geometry.h 
+	G4Media.cxx G4Media.h IntDetectorManager.cxx 
+	IntDetectorManager.h McParticleManager.cxx McParticleManager.h 
+	PhysicsList.h PosDetectorManager.cxx PosDetectorManager.h 
+	PrimaryGeneratorAction.h RunManager.cxx RunManager.h 
+	TrackingAction.cxx TrackingAction.h UIsession.h mainpage.h 
+Log Message:
+Lots of small changes to fix code conventions (naming and style); added doxygen comments to almost all 
+the header; first steps to prepare for code review release
+
+    *
+------------------------------------------------------------
+User: burnett  Fri Apr 12 15:21:34 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4ParticlePropagator.h 
+Log Message:
+suppress windows warning message
+    *
+------------------------------------------------------------
+User: burnett  Fri Apr 12 15:20:54 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.cxx DetectorManager.h G4Generator.cxx 
+Log Message:
+allow for no display
+    *
+------------------------------------------------------------
+User: usher  Thu Apr 11 16:20:21 PDT 2002
+G4Generator/src/Dll
+
+Modified Files:
+	G4Generator_load.cxx 
+Log Message:
+1) Add new files for implementing a Geant4 particle transporter used
+   mainly by tracking in the track fit stage
+2) Modify G4Generator.cxx to look for a RunManager before attempting to
+   instantiate one.
+
+    *
+------------------------------------------------------------
+User: usher  Thu Apr 11 16:20:21 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx 
+Added Files:
+	G4ParticlePropagator.cxx G4ParticlePropagator.h 
+	G4PropagatorSvc.cxx ParticleTransporter.cxx 
+	ParticleTransporter.h TransportStepInfo.h 
+Log Message:
+1) Add new files for implementing a Geant4 particle transporter used
+   mainly by tracking in the track fit stage
+2) Modify G4Generator.cxx to look for a RunManager before attempting to
+   instantiate one.
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 11 07:29:08 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch GlastEvent use
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 11 04:46:52 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+update for patch tag (v3r3p2) including fixes to world volume size and patch to satisfy egcs
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 11 04:46:51 PDT 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+update for patch tag (v3r3p2) including fixes to world volume size and patch to satisfy egcs
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 11 04:42:31 PDT 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx 
+Log Message:
+provide default parameters for egcs
+    *
+------------------------------------------------------------
+User: riccardo  Thu Apr 11 01:56:18 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Geometry.cxx 
+Log Message:
+Changed the world volume dimensions to fix a geometry bug in G4Geometry
+
+    *
+------------------------------------------------------------
+User: riccardo  Tue Apr  9 05:08:19 PDT 2002
+G4Generator/src
+
+Modified Files:
+	RunManager.cxx 
+Log Message:
+Solved a memory leackage in RunManager
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Apr  8 09:51:20 PDT 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+new tag
+    *
+------------------------------------------------------------
+User: riccardo  Mon Apr  8 07:59:07 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+First draft version of an McParticle hierarchy filling; added a new class, McParticleManager,
+to deal with that; small changes to TrackerAction and to PosDetectorManager and IntDetectorManager
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Apr  8 07:59:07 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx IntDetectorManager.cxx PosDetectorManager.cxx 
+	TrackingAction.cxx 
+Added Files:
+	McParticleManager.cxx McParticleManager.h 
+Log Message:
+First draft version of an McParticle hierarchy filling; added a new class, McParticleManager,
+to deal with that; small changes to TrackerAction and to PosDetectorManager and IntDetectorManager
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Apr  8 03:16:44 PDT 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+Tentative correction of a rotation bug in volume positioning
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Apr  8 03:16:43 PDT 2002
+G4Generator/src
+
+Modified Files:
+	G4Geometry.cxx 
+Log Message:
+Tentative correction of a rotation bug in volume positioning
+
+    *
+------------------------------------------------------------
+User: burnett  Sat Apr  6 12:27:54 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.h 
+Log Message:
+tweak to get right color
+    *
+------------------------------------------------------------
+User: burnett  Sat Apr  6 12:12:07 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+
+Implement optional display of the volume ids of hit sensitive volumes. 
+    *
+------------------------------------------------------------
+User: burnett  Sat Apr  6 12:12:06 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.cxx DetectorManager.h DisplayManager.cxx 
+	DisplayManager.h IntDetectorManager.cxx 
+Log Message:
+
+Implement optional display of the volume ids of hit sensitive volumes. 
+    *
+------------------------------------------------------------
+User: burnett  Sat Apr  6 12:12:05 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+Implement optional display of the volume ids of hit sensitive volumes. 
+    *
+------------------------------------------------------------
+User: chehtman  Fri Apr  5 16:18:28 PST 2002
+G4Generator/src
+
+Modified Files:
+	IntDetectorManager.cxx 
+Log Message:
+Bug fixed in coordinates conversion to local reference system:
+ HepVector3D replaced by HepPoint3D
+    *
+------------------------------------------------------------
+User: jrb  Fri Apr  5 15:44:07 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Geometry.cxx G4Geometry.h 
+Log Message:
+Make choice mode a constructor argument (with default) 
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Apr  5 15:42:42 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Ignore unix makefiles
+
+    *
+------------------------------------------------------------
+User: riccardo  Fri Apr  5 08:23:51 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Some small changes to the doxygen documentation (started the work for the code review); G4Generator
+uses the new initialize and finalize methods for McParticle
+
+    *
+------------------------------------------------------------
+User: riccardo  Fri Apr  5 08:23:51 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.h DetectorManager.h G4Generator.cxx 
+	IntDetectorManager.h PosDetectorManager.h mainpage.h 
+Log Message:
+Some small changes to the doxygen documentation (started the work for the code review); G4Generator
+uses the new initialize and finalize methods for McParticle
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr  4 10:26:09 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Geometry.cxx G4Geometry.h 
+Log Message:
+Changes to concrete implementation of IGeometry for compatibility with
+new interface
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Apr  4 10:25:25 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+G4Generator is no longer compatible with old IGeometry interface; requires
+new GlastSvc major version.
+
+    *
+------------------------------------------------------------
+User: riccardo  Thu Apr  4 04:53:59 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	test_sources.xml 
+Log Message:
+Preliminary new version of physics list with hadronic processes; new TrackingAction class for McParticle tree filling
+    *
+------------------------------------------------------------
+User: riccardo  Thu Apr  4 04:53:59 PST 2002
+G4Generator/src
+
+Modified Files:
+	PhysicsList.cxx PhysicsList.h PosDetectorManager.cxx 
+	RunManager.cxx RunManager.h 
+Added Files:
+	EMPhysics.cxx EMPhysics.h GeneralPhysics.cxx GeneralPhysics.h 
+	HadronPhysics.cxx HadronPhysics.h IonPhysics.cxx IonPhysics.h 
+	MuonPhysics.cxx MuonPhysics.h TrackingAction.cxx 
+	TrackingAction.h 
+Log Message:
+Preliminary new version of physics list with hadronic processes; new TrackingAction class for McParticle tree filling
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 26 21:30:03 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx IntDetectorManager.cxx 
+	PrimaryGeneratorAction.h 
+Log Message:
+
+Add suport for McParticle, fix facilities dependence
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 26 21:30:02 PST 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+Add suport for McParticle, fix facilities dependence
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 26 21:30:02 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+Add suport for McParticle, fix facilities dependence
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 26 09:24:29 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Geometry.cxx 
+Log Message:
+
+Fix sign of rotation angles, remove dll source from G4test. -----> v3r1p1
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 26 09:24:28 PST 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+Fix sign of rotation angles, remove dll source from G4test. -----> v3r1p1
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 26 09:24:28 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+Fix sign of rotation angles, remove dll source from G4test. -----> v3r1p1
+    *
+------------------------------------------------------------
+User: burnett  Sat Mar 23 12:56:22 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+remove explict versions
+    *
+------------------------------------------------------------
+User: burnett  Thu Mar 21 12:31:36 PST 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+===================to tag v3r1=============================================
+    *
+------------------------------------------------------------
+User: riccardo  Tue Mar 19 10:02:00 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Removed Digi dependencies
+
+    *
+------------------------------------------------------------
+User: riccardo  Tue Mar 19 09:46:43 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx IntDetectorManager.cxx PosDetectorManager.cxx 
+Log Message:
+Moved the creation of the branch Event/MC of TDS from PosDetectorManager.cxx to G4Generator.cxx 
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 19 08:56:08 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.cxx DetectorManager.h IntDetectorManager.cxx 
+Log Message:
+
+Clean up display code a bit (refactoring!)
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 19 08:56:08 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+Clean up display code a bit (refactoring!)
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 19 07:46:38 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.cxx DetectorManager.h PosDetectorManager.cxx 
+Log Message:
+convert to local coords in PosHits
+    *
+------------------------------------------------------------
+User: heather  Tue Mar 19 07:37:05 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update G4Test to work on linux
+    *
+------------------------------------------------------------
+User: riccardo  Tue Mar 19 02:43:55 PST 2002
+G4Generator/src
+
+Modified Files:
+	IntDetectorManager.cxx 
+Log Message:
+Started to fill the McIntegratingHit with energy info and position info (in relative coordinates)
+
+    *
+------------------------------------------------------------
+User: heather  Mon Mar 18 12:48:00 PST 2002
+G4Generator/src
+
+Modified Files:
+	PosDetectorManager.cxx 
+Log Message:
+temp fix for putting the MC branch on the TDS
+    *
+------------------------------------------------------------
+User: heather  Mon Mar 18 11:12:29 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update versions
+    *
+------------------------------------------------------------
+User: heather  Fri Mar 15 13:54:49 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update use of GuiSvc
+    *
+------------------------------------------------------------
+User: heather  Fri Mar 15 12:31:26 PST 2002
+G4Generator/src/Dll
+
+Modified Files:
+	G4Generator_dll.cxx G4Generator_load.cxx 
+Log Message:
+use standard macros to load shareable libraries - new macros
+available in Gaudi v9
+    *
+------------------------------------------------------------
+User: heather  Fri Mar 15 12:30:15 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update version of Geant4 interface package
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 10:04:46 PST 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+Ready for v2r1 tag
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 10:04:46 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+Ready for v2r1 tag
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 10:02:38 PST 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx 
+Log Message:
+reverse integrating/position detector colors
+
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 07:26:16 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.cxx DetectorManager.h DisplayManager.cxx 
+	DisplayManager.h IntDetectorManager.cxx PosDetectorManager.cxx 
+Removed Files:
+	GlastDetectorManager.cxx GlastDetectorManager.h 
+Log Message:
+clean up display stuff
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar 15 07:26:16 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+clean up display stuff
+    *
+------------------------------------------------------------
+User: riccardo  Wed Mar 13 06:47:06 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Geometry.cxx 
+Log Message:
+Small change for Linux compatibility
+
+    *
+------------------------------------------------------------
+User: riccardo  Wed Mar 13 06:47:06 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Small change for Linux compatibility
+
+    *
+------------------------------------------------------------
+User: riccardo  Wed Mar 13 03:08:08 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Geometry.cxx G4Media.h 
+Log Message:
+Small changes to G4Geometry and G4Media for Linux compatibility
+
+    *
+------------------------------------------------------------
+User: riccardo  Tue Mar 12 09:25:20 PST 2002
+G4Generator/src
+
+Modified Files:
+	IntDetectorManager.cxx PosDetectorManager.cxx 
+Log Message:
+Added the sorting of the hits collections, both Position and Integrating, before storing them
+in the TDS 
+
+    *
+------------------------------------------------------------
+User: riccardo  Tue Mar 12 08:55:59 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorManager.h PosDetectorManager.cxx 
+Log Message:
+A small change in DetectorManager and PosDetectorManager to provide the right visualization of
+volumes involved in hits
+
+    *
+------------------------------------------------------------
+User: burnett  Mon Mar 11 14:51:46 PST 2002
+G4Generator/src
+
+Modified Files:
+	IntDetectorManager.cxx IntDetectorManager.h 
+	PosDetectorManager.cxx PosDetectorManager.h 
+Added Files:
+	DetectorManager.cxx DetectorManager.h 
+Log Message:
+add missing files, refactor code in G4SenstiveDetector hierarchy
+    *
+------------------------------------------------------------
+User: riccardo  Mon Mar 11 09:27:57 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Added 2 new sensitive detector managers, PosDetectorManager (to deal with volumes 
+that must create McPositionHit vectors) and IntDetectorManager (to deal with
+volumes that must create McIntegratingHit vectors). Both classes derive from
+GlastDetectorManager.
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Mar 11 09:27:56 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4Generator.cxx G4Geometry.cxx G4Geometry.h 
+	GlastDetectorManager.h 
+Added Files:
+	IntDetectorManager.cxx IntDetectorManager.h 
+	PosDetectorManager.cxx PosDetectorManager.h 
+Log Message:
+Added 2 new sensitive detector managers, PosDetectorManager (to deal with volumes 
+that must create McPositionHit vectors) and IntDetectorManager (to deal with
+volumes that must create McIntegratingHit vectors). Both classes derive from
+GlastDetectorManager.
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Mar 11 09:27:56 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added 2 new sensitive detector managers, PosDetectorManager (to deal with volumes 
+that must create McPositionHit vectors) and IntDetectorManager (to deal with
+volumes that must create McIntegratingHit vectors). Both classes derive from
+GlastDetectorManager.
+
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar  8 14:51:57 PST 2002
+G4Generator/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+
+reflect removal of dependence on instrument, detModel.
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar  8 14:51:57 PST 2002
+G4Generator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+reflect removal of dependence on instrument, detModel.
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar  8 14:51:57 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+reflect removal of dependence on instrument, detModel.
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar  8 07:49:03 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+convert display to mm
+    *
+------------------------------------------------------------
+User: burnett  Fri Mar  8 07:49:03 PST 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx 
+Log Message:
+convert display to mm
+    *
+------------------------------------------------------------
+User: riccardo  Thu Mar  7 07:30:05 PST 2002
+G4Generator/src
+
+Added Files:
+	G4Geometry.cxx G4Geometry.h G4Media.cxx G4Media.h 
+Log Message:
+Removed dipendencies from detModel and Instrument; now it uses new abstract interfaces in GlastDetSvc for both the geometry and materials. Inserted in a better way the hits collection (for now only PositionHit) in the TDS
+    *
+------------------------------------------------------------
+User: riccardo  Thu Mar  7 07:29:04 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+Removed dipendencies from detModel and Instrument; now it uses new abstract interfaces in GlastDetSvc for both the geometry and materials. Inserted in a better way the hits collection (for now only PositionHit) in the TDS
+    *
+------------------------------------------------------------
+User: riccardo  Thu Mar  7 07:29:04 PST 2002
+G4Generator/src/Dll
+
+Modified Files:
+	G4Generator_load.cxx 
+Log Message:
+Removed dipendencies from detModel and Instrument; now it uses new abstract interfaces in GlastDetSvc for both the geometry and materials. Inserted in a better way the hits collection (for now only PositionHit) in the TDS
+    *
+------------------------------------------------------------
+User: riccardo  Thu Mar  7 07:29:04 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4Generator.cxx G4Generator.h GlastDetectorManager.cxx 
+	GlastDetectorManager.h RunManager.cxx RunManager.h 
+Removed Files:
+	G4MaterialsVisitor.cxx G4MaterialsVisitor.h 
+	G4SectionsVisitor.cxx G4SectionsVisitor.h IrfDisplay.cxx 
+	McHitsManager.cxx McHitsManager.h 
+Log Message:
+Removed dipendencies from detModel and Instrument; now it uses new abstract interfaces in GlastDetSvc for both the geometry and materials. Inserted in a better way the hits collection (for now only PositionHit) in the TDS
+    *
+------------------------------------------------------------
+User: riccardo  Thu Mar  7 07:29:03 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Removed dipendencies from detModel and Instrument; now it uses new abstract interfaces in GlastDetSvc for both the geometry and materials. Inserted in a better way the hits collection (for now only PositionHit) in the TDS
+    *
+------------------------------------------------------------
+User: riccardo  Thu Feb 28 17:11:44 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx GlastDetectorManager.cxx 
+Added Files:
+	McHitsManager.cxx McHitsManager.h 
+Log Message:
+Added an McHitsManager singelton class to collect hits and store them in TDS with an McPositionHit vector
+    *
+------------------------------------------------------------
+User: riccardo  Thu Feb 28 17:11:44 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added an McHitsManager singelton class to collect hits and store them in TDS with an McPositionHit vector
+    *
+------------------------------------------------------------
+User: als  Thu Feb  7 14:59:22 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Feb  7 14:25:57 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix linkopts for gui test
+    *
+------------------------------------------------------------
+User: burnett  Sat Feb  2 07:25:13 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx 
+Log Message:
+fix wrong include for flux service
+    *
+------------------------------------------------------------
+User: burnett  Sat Feb  2 07:24:11 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+new versions of xmlUtil and FluxSvc
+    *
+------------------------------------------------------------
+User: burnett  Sun Jan 13 13:59:57 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+update dependent packages
+    *
+------------------------------------------------------------
+User: burnett  Sun Jan 13 13:56:44 PST 2002
+G4Generator/src
+
+Modified Files:
+	GlastDetectorManager.cxx 
+Log Message:
+disable debug dump of hit summary
+    *
+------------------------------------------------------------
+User: burnett  Sun Jan 13 13:55:20 PST 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx 
+Log Message:
+hits display default off
+    *
+------------------------------------------------------------
+User: burnett  Sun Jan 13 13:54:32 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx 
+Log Message:
+catch exception with assert
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  8 14:34:05 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+mod for linux, CMT v1r9
+    *
+------------------------------------------------------------
+User: burnett  Sun Jan  6 14:23:01 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DisplayManager.h 
+Log Message:
+unix fixes
+    *
+------------------------------------------------------------
+User: burnett  Sat Jan  5 13:21:43 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix data version
+    *
+------------------------------------------------------------
+User: burnett  Sat Jan  5 12:30:19 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+detModel bug fix
+    *
+------------------------------------------------------------
+User: burnett  Sat Jan  5 11:46:48 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+add mainpage, update requirements
+    *
+------------------------------------------------------------
+User: burnett  Sat Jan  5 11:46:48 PST 2002
+G4Generator/src
+
+Added Files:
+	mainpage.h 
+Log Message:
+add mainpage, update requirements
+    *
+------------------------------------------------------------
+User: burnett  Sat Jan  5 11:46:47 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Added Files:
+	.cvsignore 
+Log Message:
+add mainpage, update requirements
+    *
+------------------------------------------------------------
+User: burnett  Fri Jan  4 11:09:17 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+fix up to be checkout package
+    *
+------------------------------------------------------------
+User: burnett  Fri Jan  4 11:09:17 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix up to be checkout package
+    *
+------------------------------------------------------------
+User: burnett  Thu Jan  3 09:39:32 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Make into a temporary checkout package.
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Jan  3 09:39:32 PST 2002
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Make into a temporary checkout package.
+
+    *
+------------------------------------------------------------
+User: burnett  Wed Jan  2 20:31:53 PST 2002
+G4Generator/src
+
+Modified Files:
+	GlastDetectorManager.cxx GlastDetectorManager.h 
+Log Message:
+
+Slight mod to fix digi connection to GlastDetector hierarchy.
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 19:16:57 PST 2002
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+test setup for G4 with full detector
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 19:04:21 PST 2002
+G4Generator/src
+
+Added Files:
+	IrfDisplay.cxx 
+Log Message:
+Copy from GismoGenerator for test display
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 18:42:23 PST 2002
+G4Generator/src/Dll
+
+Modified Files:
+	G4Generator_load.cxx 
+Log Message:
+add alg to display hits
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 18:39:16 PST 2002
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx 
+Log Message:
+Implement setup for Instrument with GlastDetector service, clean a little.
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 18:36:33 PST 2002
+G4Generator/src
+
+Modified Files:
+	GlastDetectorManager.cxx GlastDetectorManager.h 
+Log Message:
+Finish setting up GlastDetector interface.
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 18:35:25 PST 2002
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx DisplayManager.h 
+Log Message:
+Convert from mm to cm, for consistency with old convention
+
+    *
+------------------------------------------------------------
+User: burnett  Tue Jan  1 18:33:25 PST 2002
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+Log Message:
+make topvol available, pass in idmap to GlastDetectorManager
+    *
+------------------------------------------------------------
+User: burnett  Wed Dec 19 02:58:21 PST 2001
+G4Generator/src
+
+Modified Files:
+	GlastDetectorManager.cxx 
+Log Message:
+disable instrument stuff for now
+    *
+------------------------------------------------------------
+User: burnett  Wed Dec 19 02:57:41 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx 
+Log Message:
+create detector display
+    *
+------------------------------------------------------------
+User: burnett  Wed Dec 19 02:56:50 PST 2001
+G4Generator/src
+
+Modified Files:
+	DisplayManager.cxx DisplayManager.h 
+Log Message:
+implement detector display
+    *
+------------------------------------------------------------
+User: frailis  Mon Dec 17 10:05:36 PST 2001
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Correct requirements file for linux 2
+    *
+------------------------------------------------------------
+User: frailis  Mon Dec 17 10:01:36 PST 2001
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Correct requirements file for linux
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 17 08:20:07 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4SectionsVisitor.cxx 
+Log Message:
+fix id generation
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 17 01:15:54 PST 2001
+G4Generator/src
+
+Removed Files:
+	HepRepXMLWriter.cxx HepRepXMLWriter.h 
+Log Message:
+remove HepRepXMLWriter
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 17 01:14:09 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+Log Message:
+remove sensitive detector
+    *
+------------------------------------------------------------
+User: riccardo  Mon Dec 17 01:10:59 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx GlastDetectorManager.cxx 
+Removed Files:
+	SensitiveDetector.cxx SensitiveDetector.h 
+Log Message:
+Removed old SensitiveDetector class
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 17 00:35:49 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+clean up visitor interface, implementation
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 17 00:35:49 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx G4SectionsVisitor.cxx 
+	G4SectionsVisitor.h 
+Log Message:
+clean up visitor interface, implementation
+    *
+------------------------------------------------------------
+User: burnett  Mon Dec 17 00:34:56 PST 2001
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Removed Files:
+	setup.bat 
+Log Message:
+fix unix build; remove setup.bat
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 09:51:50 PST 2001
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add gui service
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:53:24 PST 2001
+G4Generator/src
+
+Modified Files:
+	RunManager.cxx 
+Log Message:
+suppress warnings in windows
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:51:40 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+Log Message:
+clean up a little more
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:33:16 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+reorganize options
+    *
+------------------------------------------------------------
+User: riccardo  Sun Dec 16 08:33:03 PST 2001
+G4Generator/src/test
+
+Removed Files:
+	VolumeIdentifier.cxx VolumeIdentifier.h 
+Log Message:
+Removal of VolumeIdentifier
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:29:49 PST 2001
+G4Generator/src
+
+Added Files:
+	GlastDetectorManager.cxx GlastDetectorManager.h 
+Log Message:
+add sensitive detector for GlastDetector stuff
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:28:23 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4SectionsVisitor.h 
+Log Message:
+construct identifiers with VolumeIdentifier class
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:28:15 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4SectionsVisitor.cxx 
+Log Message:
+construct identifiers with VolumeIdentifier class
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:25:18 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4MaterialsVisitor.cxx 
+Log Message:
+clean up fractions normalization a little
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:20:54 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+Log Message:
+clean up call to create materials, remove string id stuff
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:15:31 PST 2001
+G4Generator/src
+
+Added Files:
+	DisplayManager.cxx DisplayManager.h 
+Log Message:
+new display management
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:15:03 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h 
+Log Message:
+add display options
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:11:48 PST 2001
+G4Generator/src
+
+Modified Files:
+	RunManager.cxx 
+Log Message:
+fix returns to avoid errors
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec 16 08:07:52 PST 2001
+G4Generator/src/Dll
+
+Modified Files:
+	G4Generator_load.cxx 
+Log Message:
+ implement WARNING and FATAL for old code (temporary)
+    *
+------------------------------------------------------------
+User: riccardo  Sun Dec 16 01:54:47 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx RunManager.cxx RunManager.h 
+Log Message:
+Added new methods to RunManager to access the list of points for the trajectories in the currentEvent
+    *
+------------------------------------------------------------
+User: riccardo  Sun Dec 16 00:35:20 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	VolumeIdentifier.cxx VolumeIdentifier.h jobOptions.txt 
+Log Message:
+Added a new method getCurrentEvent to RunManager class
+    *
+------------------------------------------------------------
+User: riccardo  Sun Dec 16 00:35:19 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx RunManager.cxx RunManager.h 
+	SensitiveDetector.cxx 
+Log Message:
+Added a new method getCurrentEvent to RunManager class
+    *
+------------------------------------------------------------
+User: burnett  Tue Dec 11 07:33:00 PST 2001
+G4Generator/src/test
+
+Added Files:
+	VolumeIdentifier.cxx VolumeIdentifier.h 
+Log Message:
+tentative class to manage volume identifiers
+    *
+------------------------------------------------------------
+User: riccardo  Tue Dec 11 02:24:59 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4SectionsVisitor.cxx 
+Log Message:
+Fixed a bug on visitTube method
+    *
+------------------------------------------------------------
+User: riccardo  Fri Dec  7 10:01:05 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4MaterialsVisitor.cxx 
+Log Message:
+Modified the fractionmass addition to accomodate non normalized values
+    *
+------------------------------------------------------------
+User: riccardo  Fri Dec  7 05:43:31 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+Added HepRep support; it is in SensitiveDetector for now, but MUST be moved somewhere in the future (probably doing a HepRepSvc). Added also HepRepXMLWriter class from J.Perl, needed to produce heprep xml files.
+    *
+------------------------------------------------------------
+User: riccardo  Fri Dec  7 05:43:31 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx G4Generator.cxx SensitiveDetector.cxx 
+	SensitiveDetector.h 
+Added Files:
+	HepRepXMLWriter.cxx HepRepXMLWriter.h 
+Log Message:
+Added HepRep support; it is in SensitiveDetector for now, but MUST be moved somewhere in the future (probably doing a HepRepSvc). Added also HepRepXMLWriter class from J.Perl, needed to produce heprep xml files.
+    *
+------------------------------------------------------------
+User: burnett  Wed Dec  5 21:27:05 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4SectionsVisitor.cxx G4SectionsVisitor.h 
+Log Message:
+Apply principles of Refractoring's Extract Method(110) to the calculation of ids, defining a new
+private method  processIds. 
+This changed the behavior, since the previous code had a little bug.
+ 
+
+    *
+------------------------------------------------------------
+User: riccardo  Mon Dec  3 10:18:27 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4SectionsVisitor.cxx G4SectionsVisitor.h 
+Log Message:
+Some minor changes in G4SectionsVisitor.cxx, added the Tube stuff and some optimization
+    *
+------------------------------------------------------------
+User: riccardo  Mon Dec  3 07:34:34 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Added fake visitTube to SectionsVisitor to compile with new version of detModel, need to be implemented
+    *
+------------------------------------------------------------
+User: riccardo  Mon Dec  3 07:34:34 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx G4SectionsVisitor.h RunManager.cxx 
+	RunManager.h SensitiveDetector.cxx 
+Log Message:
+Added fake visitTube to SectionsVisitor to compile with new version of detModel, need to be implemented
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec  2 14:23:24 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+
+1) In requirements, restored test program that does not load dll
+
+2) Added several properties of the algorithm G4Generator to set
+   * the topvolume, for example oneTower, to allow tests of a subset
+   * the mode for the sections visitor (and mods to propagate it to detModel) 
+   * a set of UI commands to run before each event (but does not seem to work??)
+
+3) Added various summary output:
+   * a list of logical volume names, and number of associated physical volumes
+   * a list of the total energy deposited per sensitive detector name, for each event
+
+4) Fixed apparent bug in G4SectionsVisitor, with rotation matrix. replaced with (conditional) code,
+   rather more concise, with select and loop rearranged for clarity. Also null rotation matrix if no 
+   rotation needed.
+
+5) A few changes to bring code style into compliance with GLAST standards. (Many more needed.)
+
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec  2 14:23:24 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4Generator.cxx G4Generator.h G4SectionsVisitor.cxx 
+	G4SectionsVisitor.h RunManager.cxx RunManager.h 
+	SensitiveDetector.cxx SensitiveDetector.h UIsession.h 
+Log Message:
+
+1) In requirements, restored test program that does not load dll
+
+2) Added several properties of the algorithm G4Generator to set
+   * the topvolume, for example oneTower, to allow tests of a subset
+   * the mode for the sections visitor (and mods to propagate it to detModel) 
+   * a set of UI commands to run before each event (but does not seem to work??)
+
+3) Added various summary output:
+   * a list of logical volume names, and number of associated physical volumes
+   * a list of the total energy deposited per sensitive detector name, for each event
+
+4) Fixed apparent bug in G4SectionsVisitor, with rotation matrix. replaced with (conditional) code,
+   rather more concise, with select and loop rearranged for clarity. Also null rotation matrix if no 
+   rotation needed.
+
+5) A few changes to bring code style into compliance with GLAST standards. (Many more needed.)
+
+    *
+------------------------------------------------------------
+User: burnett  Sun Dec  2 14:23:23 PST 2001
+G4Generator/cmt
+
+Modified Files:
+	requirements setup.bat 
+Log Message:
+
+1) In requirements, restored test program that does not load dll
+
+2) Added several properties of the algorithm G4Generator to set
+   * the topvolume, for example oneTower, to allow tests of a subset
+   * the mode for the sections visitor (and mods to propagate it to detModel) 
+   * a set of UI commands to run before each event (but does not seem to work??)
+
+3) Added various summary output:
+   * a list of logical volume names, and number of associated physical volumes
+   * a list of the total energy deposited per sensitive detector name, for each event
+
+4) Fixed apparent bug in G4SectionsVisitor, with rotation matrix. replaced with (conditional) code,
+   rather more concise, with select and loop rearranged for clarity. Also null rotation matrix if no 
+   rotation needed.
+
+5) A few changes to bring code style into compliance with GLAST standards. (Many more needed.)
+
+    *
+------------------------------------------------------------
+User: riccardo  Fri Nov 30 09:34:53 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt test_sources.xml 
+Log Message:
+Some minor changes in G4Generator
+    *
+------------------------------------------------------------
+User: riccardo  Fri Nov 30 09:34:53 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx PrimaryGeneratorAction.cxx 
+	PrimaryGeneratorAction.h 
+Log Message:
+Some minor changes in G4Generator
+    *
+------------------------------------------------------------
+User: riccardo  Fri Nov 30 09:11:56 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h G4MaterialsVisitor.cxx 
+	G4MaterialsVisitor.h 
+Added Files:
+	RunManager.cxx RunManager.h UIsession.h 
+Log Message:
+Added a first version of RunManager and of UIsession to override normal G4 event loop and G4 outputs on screen
+    *
+------------------------------------------------------------
+User: burnett  Fri Nov 30 08:51:20 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+remove strange date/time intoduced by notepad
+    *
+------------------------------------------------------------
+User: burnett  Fri Nov 30 08:36:43 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Added Files:
+	test_sources.xml 
+Log Message:
+put in customizeable source
+    *
+------------------------------------------------------------
+User: riccardo  Fri Nov 30 05:37:08 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx 
+Log Message:
+Get rid of char*
+    *
+------------------------------------------------------------
+User: riccardo  Fri Nov 30 04:35:07 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4MaterialsVisitor.cxx 
+Log Message:
+Minor changes
+    *
+------------------------------------------------------------
+User: riccardo  Fri Nov 30 04:35:07 PST 2001
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Minor changes
+    *
+------------------------------------------------------------
+User: burnett  Thu Nov 29 14:49:40 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+fix for Windows
+    *
+------------------------------------------------------------
+User: burnett  Thu Nov 29 14:49:39 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4MaterialsVisitor.cxx SensitiveDetector.cxx 
+Log Message:
+fix for Windows
+    *
+------------------------------------------------------------
+User: riccardo  Thu Nov 29 08:08:32 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx 
+Log Message:
+Get rid of xml file path in DetectorConstruction
+    *
+------------------------------------------------------------
+User: riccardo  Wed Nov 28 08:00:35 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4MaterialsVisitor.cxx SensitiveDetector.cxx 
+Log Message:
+Added dumpr of volume name and material used in the SensitiveDetector
+    *
+------------------------------------------------------------
+User: riccardo  Wed Nov 28 07:46:25 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Working version of MaterialsVisitor
+    *
+------------------------------------------------------------
+User: riccardo  Wed Nov 28 07:46:24 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx G4MaterialsVisitor.cxx 
+	G4SectionsVisitor.cxx 
+Log Message:
+Working version of MaterialsVisitor
+    *
+------------------------------------------------------------
+User: frailis  Wed Nov 28 07:13:21 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx G4MaterialsVisitor.cxx 
+Log Message:
+Solved some problems with elements
+    *
+------------------------------------------------------------
+User: riccardo  Wed Nov 28 05:47:24 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4MaterialsVisitor.cxx 
+Log Message:
+Some minor bug fixes
+    *
+------------------------------------------------------------
+User: riccardo  Wed Nov 28 05:23:40 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4MaterialsVisitor.cxx G4MaterialsVisitor.h 
+Log Message:
+Some bug fixes in G4MaterialsVisitor
+    *
+------------------------------------------------------------
+User: frailis  Wed Nov 28 02:14:33 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx 
+Added Files:
+	G4MaterialsVisitor.cxx G4MaterialsVisitor.h 
+Log Message:
+added G4MaterialsVisitor
+    *
+------------------------------------------------------------
+User: riccardo  Tue Nov 27 09:42:32 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Added the SensitiveDetector class for dealing with hit
+    *
+------------------------------------------------------------
+User: riccardo  Tue Nov 27 09:42:32 PST 2001
+G4Generator/src
+
+Modified Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4Generator.cxx 
+Added Files:
+	SensitiveDetector.cxx SensitiveDetector.h 
+Log Message:
+Added the SensitiveDetector class for dealing with hit
+    *
+------------------------------------------------------------
+User: burnett  Mon Nov 26 21:42:03 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4SectionsVisitor.cxx G4SectionsVisitor.h 
+Log Message:
+a lot of std's, disable attributes in WIN32 version
+    *
+------------------------------------------------------------
+User: riccardo  Mon Nov 26 10:00:20 PST 2001
+G4Generator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+First draft versions of DetectorConstruction, G4SectionsVisitor, PhysicsList, PrimaryGeneratorAction classes
+    *
+------------------------------------------------------------
+User: riccardo  Mon Nov 26 10:00:19 PST 2001
+G4Generator/src
+
+Modified Files:
+	G4Generator.cxx G4Generator.h 
+Added Files:
+	DetectorConstruction.cxx DetectorConstruction.h 
+	G4SectionsVisitor.cxx G4SectionsVisitor.h PhysicsList.cxx 
+	PhysicsList.h PrimaryGeneratorAction.cxx 
+	PrimaryGeneratorAction.h 
+Log Message:
+First draft versions of DetectorConstruction, G4SectionsVisitor, PhysicsList, PrimaryGeneratorAction classes
+    *
+------------------------------------------------------------
+User: riccardo  Mon Nov 26 10:00:19 PST 2001
+G4Generator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+First draft versions of DetectorConstruction, G4SectionsVisitor, PhysicsList, PrimaryGeneratorAction classes
+    *
+------------------------------------------------------------
+User: burnett  Sun Nov 18 18:55:43 PST 2001
+G4Generator
+
+Log Message:
+Inital version of a package containing a skeleton algorithm to generate events using G4
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+N G4Generator/.cvsignore
+N G4Generator/cmt/cleanup.bat
+N G4Generator/cmt/Makefile
+N G4Generator/cmt/NMake
+N G4Generator/cmt/requirements
+N G4Generator/cmt/setup.bat
+N G4Generator/doc/release.notes
+N G4Generator/src/G4Generator.cxx
+N G4Generator/src/G4Generator.h
+N G4Generator/src/Dll/G4Generator_dll.cxx
+N G4Generator/src/Dll/G4Generator_load.cxx
+N G4Generator/src/test/G4TestAlg.cxx
+N G4Generator/src/test/jobOptions.txt
+
+No conflicts created by this import
+
+    *
