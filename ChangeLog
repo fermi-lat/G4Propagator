@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Feb 20 15:12:58 PST 2003
+G4Propagator/src
+
+Modified Files:
+	G4PropagatorTool.cxx G4PropagatorTool.h 
+Log Message:
+move initialization into initialization() method
+    *
+------------------------------------------------------------
 User: usher  Tue Feb 18 08:54:32 PST 2003
 G4Propagator/src/test
 
