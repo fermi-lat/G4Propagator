@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.9 2004/07/22 03:39:19 lsrea Exp $
+    $Id: release.notes,v 1.10 2004/11/26 17:41:56 usher Exp $
  @verbatim
 
+ v1r3p1 30-Nov-04 TU   Fix compile bugs in interim tag version...
  v1r3p0 26-Nov-04 TU   Interim tag for G4 6.2 patch 2
  v1r2p4 21-jul-04 LSR  Fix req. file according to Traudl's suggestion
  v1r2p3 19-feb-04 THB  gcc code compliance fix
