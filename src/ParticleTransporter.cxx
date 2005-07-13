@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.16 2005/03/02 04:28:43 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.17 2005/03/02 17:49:27 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -303,11 +303,22 @@ bool ParticleTransporter::StepAnArcLength(const double maxArcLen)
                 // Parallel track case
                 if (fabs(trkToExitAng) < kCarTolerance)
                 {
-                    if (fabs(curDir.x()) < kCarTolerance) curDir.setX(0.);
-                    if (fabs(curDir.y()) < kCarTolerance) curDir.setY(0.);
-                    if (fabs(curDir.z()) < kCarTolerance) curDir.setZ(0.);
+                    // One of the components of the direction vector is near zero (and below tolerance)
+                    // and this is causing the step length calculation to screw up. The step length 
+                    // calculation is done in local coordinates though, so if we zero out the bad global
+                    // component then the transformation will probably still result in a small but non-zero
+                    // number... (and the G4 code tests on identically zero). 
+                    // So... zero out the bad value in local coordinates
+                    if (fabs(trackDir.x()) < kCarTolerance) trackDir.setX(0.);
+                    if (fabs(trackDir.y()) < kCarTolerance) trackDir.setY(0.);
+                    if (fabs(trackDir.z()) < kCarTolerance) trackDir.setZ(0.);
+            
+                    // Now find the transformation from local back to global coordinates
+                    G4AffineTransform  localToGlobal = navigator->GetLocalToGlobalTransform();
 
-                    curDir.setMag(1.);
+                    // Update the current direction in global coordinates to this direction. 
+                    // This will assure us that the value will be "correct" in the G4 step length calculation
+                    curDir = localToGlobal.TransformAxis(trackDir);
                 }
                 // Surface tolerance case 
                 else 
