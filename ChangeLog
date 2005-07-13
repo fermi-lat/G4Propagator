@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Wed Jul 13 15:22:47 PDT 2005
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Finally fix the case of zero step length returned when ray travelling parallel to the surface of a volume with position within the tolerance...
+    *
+------------------------------------------------------------
+User: usher  Wed Jul 13 15:22:47 PDT 2005
 G4Propagator
 
 Modified Files:
