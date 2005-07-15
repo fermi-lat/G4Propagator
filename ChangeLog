@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Jul 15 14:55:31 PDT 2005
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Change strategy on parallel and close to surface again... this time seems to work on linux as well as windows. Fingers crossed!
+    *
+------------------------------------------------------------
 User: usher  Fri Jul 15 14:55:30 PDT 2005
 G4Propagator/doc
 
