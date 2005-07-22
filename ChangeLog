@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Jul 22 03:44:03 PDT 2005
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Tagging with mods to requirements file for test program
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p6, operation: add
 Package: G4Propagator
