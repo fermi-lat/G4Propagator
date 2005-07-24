@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sun Jul 24 08:16:17 PDT 2005
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Updating requirements to fix test program, tagging v2r1p8
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p7, operation: add
 Package: G4Propagator
