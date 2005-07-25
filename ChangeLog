@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Mon Jul 25 10:51:19 PDT 2005
+G4Propagator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fixing test program again, tagging v2r1p9
+    *
+------------------------------------------------------------
+User: usher  Mon Jul 25 10:51:19 PDT 2005
 G4Propagator/cmt
 
 Modified Files:
