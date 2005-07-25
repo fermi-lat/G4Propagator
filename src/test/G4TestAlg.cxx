@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/test/G4TestAlg.cxx,v 1.1.1.1 2003/01/23 21:24:32 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/test/G4TestAlg.cxx,v 1.2 2005/07/24 15:16:18 usher Exp $
 
 // Include files
 
@@ -15,6 +15,8 @@
 #include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
 #include "idents/VolumeIdentifier.h"
 #include "idents/TowerId.h"
+#include "CLHEP/Geometry/Transform3D.h"
+
 
 /*! \class G4TestAlg
 \brief 
