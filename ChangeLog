@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Tue Jul 26 11:11:44 PDT 2005
+G4Propagator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+More blind attempts to get test program to run (I thought I had it!)
+    *
+------------------------------------------------------------
+User: usher  Tue Jul 26 11:11:44 PDT 2005
 G4Propagator/cmt
 
 Modified Files:
