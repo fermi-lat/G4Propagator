@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jul 26 11:11:44 PDT 2005
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+More blind attempts to get test program to run (I thought I had it!)
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p9, operation: add
 Package: G4Propagator
