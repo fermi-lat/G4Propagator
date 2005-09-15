@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: usher  Thu Sep 15 09:34:05 PDT 2005
-G4Propagator/src
-
-Modified Files:
-	ParticleTransporter.cxx 
-Log Message:
-Add check on valid volume for each step. Should fix JIRA issue GEANT-5
-    *
-------------------------------------------------------------
 TAG
 Tag name: v2r1p10, operation: add
 Package: G4Propagator
