@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.24 2005/07/25 17:51:19 usher Exp $
+    $Id: release.notes,v 1.25 2005/07/26 18:12:59 usher Exp $
  @verbatim
 
+ v2r1p11 15-Sep-05 TU   Introduce fix for jira issue GEANT-5
  v2r1p10 26-Jul-05 TU   Will the test program ever work?
  v2r1p9  25-Jul-05 TU   Fix the fix to the test program
  v2r1p8  24-Jul-05 TU   Fix test program
