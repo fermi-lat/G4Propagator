@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jan 31 14:04:57 PST 2006
+G4Propagator/cmt
+
+Modified Files:
+      Tag: GR-v7r3p20-newext
+	requirements 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1p11, operation: add
 Package: G4Propagator
