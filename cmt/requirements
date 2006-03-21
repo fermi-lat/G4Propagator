@@ -2,7 +2,7 @@ package G4Propagator
 version v2r1p11
 author Tracy Usher   <usher@slac.stanford.edu>
 
-#$Id: requirements,v 1.15 2005/07/26 18:11:43 usher Exp $
+#$Id: requirements,v 1.16 2005/09/15 16:35:35 usher Exp $
 
 use GlastPolicy v*
 
@@ -15,7 +15,7 @@ use G4Generator *
 private
 
 #this is private to avoid passing on build info to clients
-use Geant4   v2r* IExternal
+use Geant4   v3r* IExternal
 
 # get flags to build shared library
 
