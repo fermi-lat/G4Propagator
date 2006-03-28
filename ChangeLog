@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: cohen  Tue Mar 28 13:45:08 PST 2006
+G4Propagator/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+remove EventSelector
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2, operation: add
 Package: G4Propagator
