@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: usher  Wed Aug 16 16:11:30 PDT 2006
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx ParticleTransporter.cxx 
+	ParticleTransporter.h 
+Added Files:
+	G4PropagatorExceptionHandler.cxx 
+	G4PropagatorExceptionHandler.h 
+Log Message:
+Modifications to incoporate some rudimentary G4 exception handling for recon only jobs (where particles can still get "stuck" it would seem)
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p1, operation: add
 Package: G4Propagator
