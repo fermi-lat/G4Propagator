@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.19 2005/07/15 21:55:30 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.20 2005/09/15 16:34:05 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -12,6 +12,8 @@
 #include "CLHEP/Vector/ThreeVector.h"
 #include "globals.hh"
 #include "geomdefs.hh"
+#include "G4StateManager.hh"
+#include "G4PropagatorExceptionHandler.h"
 
 #include <stdexcept>
 #include <string>
@@ -51,6 +53,28 @@ ParticleTransporter::~ParticleTransporter()
     // Restrictions and Caveats: None
     clearStepInfo();
     
+    return;
+}
+
+void ParticleTransporter::initExceptionHandler()
+{
+    // Purpose and Method: Set up exception handling for ParticleTransporter class
+    // Inputs: none
+    // Outputs:  None
+    // Dependencies: None
+    // Restrictions and Caveats: None
+
+    // Make sure the exception handling is set up for tracking
+    G4StateManager*      stateManager = G4StateManager::GetStateManager();
+    G4VExceptionHandler* exceptHand   = stateManager->GetExceptionHandler();
+
+    // If no exception handler, register one
+    if (exceptHand == 0)
+    {
+        G4PropagatorExceptionHandler* handler = new G4PropagatorExceptionHandler();
+        stateManager->SetExceptionHandler(handler);
+    }
+
     return;
 }
 
