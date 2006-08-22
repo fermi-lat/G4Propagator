@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.28 2006/03/23 22:03:16 usher Exp $
+    $Id: release.notes,v 1.29 2006/08/17 03:15:39 usher Exp $
  @verbatim
 
+ v2r2p3   22-Aug-06 TU   Fix compilation error on linux
  v2r2p2   12-Aug-06 TU   Updates to allow exception handling of G4 errors
  v2r2     23-Mar-06 TU   Tagging for new externals (CLHEP, Gaudi, G4, tec.)
  v2r11cl0 31-Jan-06 TU   Tag development branch for new externals
