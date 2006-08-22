@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Aug 22 13:12:58 PDT 2006
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Fix to allow compilation on linux and catching of errors in G4Propgator
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p2, operation: add
 Package: G4Propagator
