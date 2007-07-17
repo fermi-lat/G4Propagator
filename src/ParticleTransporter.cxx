@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.20 2005/09/15 16:34:05 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.21 2006/08/16 23:11:23 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -770,14 +770,13 @@ ParticleTransporter::ConstStepPtr ParticleTransporter::getStepAtArcLen(double ar
   // Restrictions and Caveats: None
 
     ConstStepPtr stepPtr = stepInfo.begin();
+    double stepArcLen = 0.;
 
     // If arcLen is negative then want last step
     if (arcLen < 0.) stepPtr = stepInfo.end();
     // Otherwise, go through the steps until we pass the desired distance
     else
     {
-        double stepArcLen = 0.;
-
         while(stepPtr < stepInfo.end())
         {
             double stepDist = (*stepPtr).GetArcLen();
@@ -788,6 +787,8 @@ ParticleTransporter::ConstStepPtr ParticleTransporter::getStepAtArcLen(double ar
             stepPtr++;
         }
     }
+
+    if(stepPtr!=stepInfo.begin()) --stepPtr;
 
     return stepPtr;
 }
