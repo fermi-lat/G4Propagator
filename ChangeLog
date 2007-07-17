@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Tue Jul 17 11:31:10 PDT 2007
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v2r2p5
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p4, operation: add
 Package: G4Propagator
