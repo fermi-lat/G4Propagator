@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 29 20:01:39 PDT 2007
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+use gr_app
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p7, operation: add
 Package: G4Propagator
