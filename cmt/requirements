@@ -2,7 +2,7 @@ package G4Propagator
 version v2r3
 author Tracy Usher   <usher@slac.stanford.edu>
 
-#$Id: requirements,v 1.24 2007/07/17 18:39:59 lsrea Exp $
+#$Id: requirements,v 1.25 2007/10/30 03:01:39 heather Exp $
 
 use GlastPolicy v*
 
@@ -38,7 +38,7 @@ library G4Propagator -s=../src $(source) -s=Dll *.cxx
 # following for test program only: no dependence on the interface
 use GlastSvc
 use FluxSvc
-use cfitsio * IExternal
+### use cfitsio * IExternal
 use flux
 
 public 
