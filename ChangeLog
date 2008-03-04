@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Mar  3 16:50:32 PST 2008
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Private use of cfitsio no longer necessary; get it from G4Generator
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r3, operation: add
 Package: G4Propagator
