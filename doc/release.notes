@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.33 2007/07/17 18:39:59 lsrea Exp $
+    $Id: release.notes,v 1.34 2007/10/30 03:01:40 heather Exp $
  @verbatim
 
+ v2r3p1    3-Mar-08 jrb  take out private use of cfitsio
  v2r3     30-Oct-07 HMK  Use gr_app
  v2r2p7   17-Jul-07 LSR  Fix bug in ParticleTransporter::getStepAtArclen()
                             I don't think this code was ever called before
