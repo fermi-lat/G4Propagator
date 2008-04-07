@@ -2,6 +2,14 @@
 TAG
 Tag name: G4Propagator-02-03-01, operation: add
 Package: G4Propagator
+User: glastrm  Mon Apr  7 08:06:51 2008
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: G4Propagator-02-03-01, operation: add
+Package: G4Propagator
 User: glastrm  Mon Mar  3 17:00:18 2008
 Files:
   G4Propagator/.cvsignore  1.2
