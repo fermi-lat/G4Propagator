@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri May  9 10:51:44 PDT 2008
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Ok, getting the last step index correct..
+    *
+------------------------------------------------------------
 User: usher  Fri May  9 10:50:11 PDT 2008
 G4Propagator/src/test
 
