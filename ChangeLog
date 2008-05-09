@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: usher  Fri May  9 10:51:44 PDT 2008
-G4Propagator/src
-
-Modified Files:
-	G4PropagationTool.cxx 
-Log Message:
-Ok, getting the last step index correct..
-    *
-------------------------------------------------------------
-User: usher  Fri May  9 10:50:11 PDT 2008
-G4Propagator/src/test
-
-Modified Files:
-	G4TestAlg.cxx 
-Log Message:
-Restoring stepIdx "protection" in getStepPosition so that it cannot be less than zero or greater than the number of steps.
-    *
-------------------------------------------------------------
-User: usher  Fri May  9 10:50:11 PDT 2008
-G4Propagator/src
-
-Modified Files:
-	G4PropagationTool.cxx 
-Log Message:
-Restoring stepIdx "protection" in getStepPosition so that it cannot be less than zero or greater than the number of steps.
-    *
-------------------------------------------------------------
 TAG
 Tag name: G4Propagator-02-03-01, operation: add
 Package: G4Propagator
