@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.22 2007/07/17 18:40:00 lsrea Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.23 2008/07/16 15:30:44 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -347,7 +347,7 @@ bool ParticleTransporter::StepAnArcLength(const double maxArcLen)
                 else 
                 {
                     stepOverDist += 1000. * kCarTolerance / fabs(trkToExitAng); // 1000 * minimum tolerance in G4
-                    overPoint     = curPoint + stepOverDist*curDir;
+                    overPoint    += stepOverDist*curDir;
                 }
 
                 // Re-step with new points
