@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jul 22 10:39:49 PDT 2008
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+The next next solution to the stuck particle problem
+    *
+------------------------------------------------------------
 User: usher  Mon Jul 21 17:30:25 PDT 2008
 G4Propagator/src
 
