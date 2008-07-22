@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.36 2008/05/09 17:53:21 usher Exp $
+    $Id: release.notes,v 1.37 2008/07/16 15:33:57 usher Exp $
  @verbatim
 
+ v2r4p1   22-Jul-08 TU   Modify again... "major combat operations have ended" is, I hope, not the operative phrase
  v2r4p0   16-Jul-08 TU   Modify method to handle special case resulting in G4 "stuck track" syndrome
  v2r3p2    9-May-08 TU   Restoring protection on stepIdx in the getStepPosition method of G4PropagationTool
  v2r3p1    3-Mar-08 jrb  take out private use of cfitsio
