@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Jul 21 17:30:25 PDT 2008
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Beat this bug into final submission
+    *
+------------------------------------------------------------
 User: glastrm  Mon Jul 21 08:17:29 PDT 2008
 GlastRelease-scons/G4Propagator/src/test
 
