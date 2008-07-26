@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Jul 25 20:44:44 PDT 2008
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Increase step increment for stuck particles and add some protection to keep from fillng the log file.
+    *
+------------------------------------------------------------
 TAG
 Tag name: G4Propagator-02-04-01, operation: add
 Package: G4Propagator
