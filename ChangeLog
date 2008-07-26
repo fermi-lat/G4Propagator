@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Jul 25 21:23:18 PDT 2008
+G4Propagator/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Decrease increment to 0.5 um and reduce tries before aborting to 100
+    *
+------------------------------------------------------------
 User: usher  Fri Jul 25 21:20:06 PDT 2008
 G4Propagator/src
 
