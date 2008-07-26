@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.25 2008/07/22 17:39:49 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.26 2008/07/26 03:44:44 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -319,7 +319,7 @@ bool ParticleTransporter::StepAnArcLength(const double maxArcLen)
             double             trackLen      = navigator->ComputeStep(overPoint, curDir, maxStep, safeStep) + stepOverDist;
 
             // Counter to try to prevent filling up the log file on stuck particles
-            int maxTries = 1000;
+            int maxTries = 100;
 
             // If we are right on the boundary then jump over and recalculate
             while(trackLen <= stepOverDist)
@@ -367,8 +367,8 @@ bool ParticleTransporter::StepAnArcLength(const double maxArcLen)
 
                 // Bump our point and, if necessary, the current step distance
                 // Try incrementing by 1 um instead of just the tolerance to see if this fixes stuck problem
-                stepOverDist += 1000. * kCarTolerance * curDir.dot(globalExitNrml);
-                overPoint    -= 1000. * kCarTolerance * globalExitNrml;
+                stepOverDist += 500. * kCarTolerance * curDir.dot(globalExitNrml);
+                overPoint    -= 500. * kCarTolerance * globalExitNrml;
 
                 // Re-step with new points
                 pCurVolume    = navigator->LocateGlobalPointAndSetup(overPoint, 0, true, true);
