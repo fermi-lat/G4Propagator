@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Jul 25 21:20:06 PDT 2008
+G4Propagator/src
+
+Modified Files:
+	ParticleTransporter.cxx 
+Log Message:
+Ok, decrease increment slightly and put abort at 100 tries
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r4p2, operation: add
 Package: G4Propagator
