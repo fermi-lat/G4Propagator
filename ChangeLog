@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Jul 31 10:27:49 PDT 2008
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx ParticleTransporter.cxx 
+Log Message:
+Minor tweaks aimed at modifying the way the geometry locating is done for stuck particles. Also added a line to list the version number at init so we can be sure what code is running
+    *
+------------------------------------------------------------
 TAG
 Tag name: G4Propagator-02-04-03, operation: add
 Package: G4Propagator
