@@ -1,8 +1,8 @@
 package G4Propagator
-version v2r5p0
+version v2r5p1
 author Tracy Usher   <usher@slac.stanford.edu>
 
-#$Id: requirements,v 1.33 2008/07/31 17:31:53 usher Exp $
+#$Id: requirements,v 1.34 2008/08/13 20:12:39 usher Exp $
 
 use GlastPolicy v*
 
