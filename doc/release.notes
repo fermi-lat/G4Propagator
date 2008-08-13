@@ -1,8 +1,9 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.40 2008/07/26 04:23:18 usher Exp $
+    $Id: release.notes,v 1.41 2008/07/31 17:31:53 usher Exp $
  @verbatim
 
+ v2r5p0   13-Aug-08 TU   Change, again, handling of the stuck tracks, returning to using local exit normals
  v2r4p4   31-Jul-08 TU   Modify geometry search slightly, add more diagnostics and checking
  v2r4p3   25-Jul-08 TU   Slight mod to below, 0.5 um increment and 100 tries
  v2r4p2   25-Jul-08 TU   Increase increment of stuck particles and add counter to abort stuck tracks 
