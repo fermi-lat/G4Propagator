@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: usher  Wed Aug 13 13:10:46 PDT 2008
-G4Propagator/src
-
-Modified Files:
-	ParticleTransporter.cxx 
-Log Message:
-Another in an endless string of yet another fix for the stuck track problem. At least now we don't overload the log files...
-    *
-------------------------------------------------------------
 TAG
 Tag name: G4Propagator-02-04-04, operation: add
 Package: G4Propagator
