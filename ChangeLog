@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Tue Nov  4 07:22:04 PST 2008
+GlastRelease-scons/G4Propagator
+
+Modified Files:
+	G4PropagatorLib.py 
+Log Message:
+Added env.Tool('G4GeneratorLib')
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:42:35 PDT 2008
 GlastRelease-scons/G4Propagator
 
