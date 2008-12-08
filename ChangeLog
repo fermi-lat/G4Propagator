@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 13:39:52 PST 2008
+GlastRelease-scons/G4Propagator
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for G4Propagator v2r5p1 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 User: ecephas  Tue Nov  4 07:22:04 PST 2008
 GlastRelease-scons/G4Propagator
 
