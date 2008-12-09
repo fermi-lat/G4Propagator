@@ -2,6 +2,16 @@
 TAG
 Tag name: G4Propagator-02-05-01, operation: add
 Package: G4Propagator
+User: ecephas  Mon Dec  8 16:08:34 2008
+Files:
+  G4Propagator/G4PropagatorLib.py  1.2
+  G4Propagator/G4PropagatorLib.py  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: G4Propagator-02-05-01, operation: add
+Package: G4Propagator
 User: ecephas  Mon Dec  8 13:39:58 2008
 Files:
   G4Propagator/SConscript  1.2
