@@ -1,7 +1,8 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.42 2008/08/13 20:12:39 usher Exp $
+    $Id: release.notes,v 1.43 2008/08/13 22:16:23 usher Exp $
  @verbatim
+ * EOH *
 
  v2r5p1   13-Aug-08 TU   Beef up the exception handling to make sure the messages are output
  v2r5p0   13-Aug-08 TU   Change, again, handling of the stuck tracks, returning to using local exit normals
