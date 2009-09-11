@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Sep 11 14:07:16 PDT 2009
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx G4PropagatorExceptionHandler.cxx 
+Log Message:
+First try at fixing linux compiler warnings
+    *
+------------------------------------------------------------
 User: heather  Wed Jul  1 08:59:56 PDT 2009
 G4Propagator/doc
 
