@@ -1,9 +1,10 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.43 2008/08/13 22:16:23 usher Exp $
+    $Id: release.notes,v 1.44 2009/07/01 15:59:56 heather Exp $
  @verbatim
  * EOH *
 
+ v2r5p2   12-Sep-09 TU   Fixing linux compiler warnings
  v2r5p1   13-Aug-08 TU   Beef up the exception handling to make sure the messages are output
  v2r5p0   13-Aug-08 TU   Change, again, handling of the stuck tracks, returning to using local exit normals
  v2r4p4   31-Jul-08 TU   Modify geometry search slightly, add more diagnostics and checking
