@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 10 15:33:32 PST 2009
+GlastRelease-scons/G4Propagator
+
+Modified Files:
+	.cvsignore SConscript 
+Log Message:
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: G4Propagator-02-05-02, operation: add
 Package: G4Propagator
