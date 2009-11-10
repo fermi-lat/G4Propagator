@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/SConscript,v 1.3 2009/01/23 00:07:02 ecephas Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/G4Propagator/SConscript,v 1.4 2009/09/12 16:19:39 usher Exp $
 # Authors: Tracy Usher <usher@slac.stanford.edu>
 # Version: G4Propagator-02-05-02
 Import('baseEnv')
@@ -14,9 +14,11 @@ libEnv.AppendUnique(CPPPATH=['#G4Generator/']) # This is because G4Propagator/sr
 G4Propagator = libEnv.SharedLibrary('G4Propagator', listFiles(['src/*.cxx','src/Dll/*.cxx']))
 
 progEnv.Tool('G4PropagatorLib')
-test_G4Propagator = progEnv.GaudiProgram('test_G4Propagator', listFiles(['src/test/*.cxx']), test=1)
-progEnv.Tool('registerObjects', package = 'G4Propagator', libraries = [G4Propagator], testApps = [test_G4Propagator])
-
-
-
-
+progEnv.Tool('FluxSvcLib')
+progEnv.Tool('GlastSvcLib')
+progEnv.Tool('fluxLib')
+test_G4Propagator = progEnv.GaudiProgram('test_G4Propagator',
+                                         listFiles(['src/test/*.cxx']), test=1)
+progEnv.Tool('registerTargets', package = 'G4Propagator',
+             libraryCxts = [[G4Propagator, libEnv]],
+             testAppCxts = [[test_G4Propagator, progEnv]])
