@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 10 17:35:42 PDT 2010
+GlastRelease-scons/G4Propagator
+
+Modified Files:
+	SConscript 
+Log Message:
+updates for SCons build
+    *
+------------------------------------------------------------
 TAG
 Tag name: G4Propagator-02-05-03, operation: add
 Package: G4Propagator
