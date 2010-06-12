@@ -2,7 +2,7 @@
 //
 // Job options file for G4Generator test
 // 
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/G4Propagator/src/test/jobOptions.txt,v 1.5 2006/03/28 21:45:07 cohen Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/G4Propagator/src/test/jobOptions.txt,v 1.6 2008/07/21 15:17:29 glastrm Exp $
 
 //  -------------- basic Glast/Gaudi run enviornment -----------
 ApplicationMgr.DLLs   = {  "GlastSvc","G4Generator","G4Propagator"};
@@ -41,7 +41,7 @@ GlastDetSvc.visitorMode="recon";
 GlastDetSvc.topVolume="LAT";         // the whole schebang 
 GlastDetSvc.visitorMode="recon";
 
-#include "$FLUXSVCROOT/src/defaultOptions.txt"
+#include "$FLUXSVCJOBOPTIONSPATH/defaultOptions.txt"
 
 // add in CRflux option
 //ApplicationMgr.DLLs +={ "CRflux" };
