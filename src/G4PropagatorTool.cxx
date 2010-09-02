@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.cxx,v 1.5 2003/04/21 22:31:07 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/G4PropagatorTool.cxx,v 1.6 2003/04/22 18:58:06 lsrea Exp $
 //
 // Description: Service for particle transport management
 //
@@ -8,8 +8,9 @@
 
 #include "G4PropagatorTool.h"
 
-static ToolFactory<G4PropagatorTool> g4prop_factory;
-const IToolFactory& G4PropagatorToolFactory = g4prop_factory;
+//static ToolFactory<G4PropagatorTool> g4prop_factory;
+//const IToolFactory& G4PropagatorToolFactory = g4prop_factory;
+DECLARE_TOOL_FACTORY(G4PropagatorTool);
 
 IG4GeometrySvc* G4PropagatorTool::geometrySvc    = 0;
 IPropagator*    G4PropagatorTool::propagatorTool = 0;
