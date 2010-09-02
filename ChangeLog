@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Sep  2 09:02:29 PDT 2010
+G4Propagator/cmt
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	requirements 
+Log Message:
+updates for Gaudi v21r7
+    *
+------------------------------------------------------------
 TAG
 Tag name: G4Propagator-02-05-04, operation: add
 Package: G4Propagator
