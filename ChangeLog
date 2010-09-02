@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Sep  2 09:02:30 PDT 2010
+G4Propagator/src
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	G4PropagationTool.cxx G4PropagatorTool.cxx 
+Log Message:
+updates for Gaudi v21r7
+    *
+------------------------------------------------------------
 User: heather  Thu Sep  2 09:02:29 PDT 2010
 G4Propagator/doc
 
