@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Thu Sep  2 09:02:29 PDT 2010
+G4Propagator/doc
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	release.notes 
+Log Message:
+updates for Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Thu Sep  2 09:02:29 PDT 2010
 G4Propagator/cmt
 
 Modified Files:
