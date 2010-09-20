@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 20 08:52:33 PDT 2010
+G4Propagator
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	SConscript 
+Log Message:
+update version
+    *
+------------------------------------------------------------
 User: heather  Thu Sep  2 09:02:30 PDT 2010
 G4Propagator/src/test
 
