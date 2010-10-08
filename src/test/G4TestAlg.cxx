@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/test/G4TestAlg.cxx,v 1.3 2005/07/25 17:51:19 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/test/G4TestAlg.cxx,v 1.4.330.1 2010/09/02 16:02:30 heather Exp $
 
 // Include files
 
@@ -44,8 +44,9 @@ private:
 };
 
 
-static const AlgFactory<G4TestAlg>  Factory;
-const IAlgFactory& G4TestAlgFactory = Factory;
+//static const AlgFactory<G4TestAlg>  Factory;
+//const IAlgFactory& G4TestAlgFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(G4TestAlg);
 
 //
 G4TestAlg::G4TestAlg(const std::string& name, ISvcLocator* pSvcLocator) :
