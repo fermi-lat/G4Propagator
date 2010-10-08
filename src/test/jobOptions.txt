@@ -2,14 +2,16 @@
 //
 // Job options file for G4Generator test
 // 
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/G4Propagator/src/test/jobOptions.txt,v 1.6 2008/07/21 15:17:29 glastrm Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/test/jobOptions.txt,v 1.7 2010/06/12 01:36:02 jrb Exp $
 
 //  -------------- basic Glast/Gaudi run enviornment -----------
 ApplicationMgr.DLLs   = {  "GlastSvc","G4Generator","G4Propagator"};
 
-ApplicationMgr.ExtSvc = { 
+ApplicationMgr.ExtSvc = { "DbEvtSelector/EventSelector" };
 //    "GlastEventSelector/EventSelector" , 
-    "EventCnvSvc"};
+ //   "EventCnvSvc"};
+
+ApplicationMgr.HistogramPersistency = "NONE";
 
 //----------------- local algorithms to run -------------------
 ApplicationMgr.TopAlg = { 
@@ -31,7 +33,7 @@ MessageSvc.OutputLevel      = 2;
 
 
 EventPersistencySvc.CnvServices = {"EventCnvSvc"};
-EventSelector.Input = "NONE";
+//EventSelector.Input = "NONE";
 
 // Stuff for detModel
 GlastDetSvc.xmlfile="$(XMLGEODBSXMLPATH)/flight/flightSegVols.xml";

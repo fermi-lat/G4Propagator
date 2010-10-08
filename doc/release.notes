@@ -1,10 +1,12 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.46 2009/11/12 01:09:39 jrb Exp $
+    $Id: release.notes,v 1.47 2010/06/12 17:26:22 jrb Exp $
  @verbatim
  * EOH *
 
+ G4Propagator-02-05-04-gr01 06-Oct-2010 hmk Upgrade Gaudi v21r7 along branch
  G4Propagator-02-05-04 12-Jun-2010    jrb upgrades for SCons builds
+ G4Propagator-02-05-03-gr01 02-Sep-2010 hmk Upgrade to Gaudi v21r7
  G4Propagator-02-05-03 11-Nov-2009    jrb Updates for SCons
  v2r5p2   12-Sep-09 TU   Fixing linux compiler warnings
  v2r5p1   13-Aug-08 TU   Beef up the exception handling to make sure the messages are output
