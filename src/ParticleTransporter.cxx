@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.29 2008/08/13 20:10:46 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.30 2008/08/13 22:13:08 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -14,6 +14,8 @@
 #include "geomdefs.hh"
 #include "G4StateManager.hh"
 #include "G4PropagatorExceptionHandler.h"
+#include "G4GeometryTolerance.hh"
+
 
 #include <stdexcept>
 #include <string>
@@ -300,6 +302,10 @@ bool ParticleTransporter::StepAnArcLength(const double maxArcLen)
     G4double      arcLen    = stepInfo.back().GetArcLen();
     G4ThreeVector curDir    = stepInfo.back().GetDirection();
     G4ThreeVector curPoint  = stepInfo.back().GetEndPoint();
+
+    // G4 no longer defines kCarTolerance
+    double kCarTolerance = G4GeometryTolerance::GetInstance()->GetSurfaceTolerance();
+
 
     // If arcLen < maxArcLen then we still need to do some tracking
     // Note that this assumes arcLen is the value set at intialization! 
@@ -611,6 +617,9 @@ double ParticleTransporter::distanceToEdge(const Vector& dir) const
     //           the value returned is negative.
     // Dependencies: Must have been setup with (at least) a call to setInitStep
     // Restrictions and Caveats: None
+
+    // Define kCarTolerance (G4 no longer does)
+    double kCarTolerance = G4GeometryTolerance::GetInstance()->GetSurfaceTolerance();
 
 
     double distToActArea = -100000.;
