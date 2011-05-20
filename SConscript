@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/SConscript,v 1.8 2010/06/12 17:26:22 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/SConscript,v 1.9 2010/12/02 00:39:50 jrb Exp $
 # Authors: Tracy Usher <usher@slac.stanford.edu>
-# Version: G4Propagator-02-05-05
+# Version: G4Propagator-03-00-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
