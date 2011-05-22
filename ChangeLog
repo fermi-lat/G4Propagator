@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Sat May 21 20:35:36 PDT 2011
+G4Propagator/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+update use of IExternal geant4 to v9r*
+    *
+------------------------------------------------------------
+User: heather  Sat May 21 20:35:36 PDT 2011
 G4Propagator/cmt
 
 Modified Files:
