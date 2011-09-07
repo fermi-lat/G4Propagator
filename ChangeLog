@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: G4Propagator
+User: heather  Wed Sep  7 10:43:48 2011
+Files:
+  G4Propagator/.cvsignore  1.3
+  G4Propagator/G4PropagatorLib.py  1.2
+  G4Propagator/ChangeLog  1.191
+  G4Propagator/SConscript  1.11
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: G4Propagator
 User: glastrm  Tue Sep  6 14:14:25 2011
