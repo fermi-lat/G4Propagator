@@ -1,7 +1,8 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/SConscript,v 1.8 2010/06/12 17:26:22 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/SConscript,v 1.12 2011/12/12 20:49:50 heather Exp $
 # Authors: Tracy Usher <usher@slac.stanford.edu>
-# Version: G4Propagator-02-05-05
+# Version: G4Propagator-02-05-05-gr01
+
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
@@ -11,7 +12,7 @@ libEnv = baseEnv.Clone()
 libEnv.Tool('addLinkDeps', package='G4Propagator', toBuild='component')
 libEnv.AppendUnique(CPPPATH=['#G4Generator/']) # This is because G4Propagator/src/G4PropagatorExceptionHandler.cxx
                                               # is looking for src/RunManager.h and it is only in G4Generator/src
-G4Propagator = libEnv.SharedLibrary('G4Propagator', listFiles(['src/*.cxx','src/Dll/*.cxx']))
+G4Propagator =libEnv.ComponentLibrary('G4Propagator',listFiles(['src/*.cxx']))
 
 progEnv.Tool('G4PropagatorLib')
 progEnv.Tool('FluxSvcLib')
