@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-19-04-01-gr08, operation: add
 Package: G4Propagator
+User: heather  Thu Feb  9 16:10:10 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-19-04-01-gr08, operation: add
+Package: G4Propagator
 User: heather  Thu Feb  9 12:36:54 2012
 Files:
   G4Propagator/.cvsignore  1.3
