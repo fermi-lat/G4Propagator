@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-lp19, operation: add
 Package: G4Propagator
+User: heather  Thu Mar 15 12:44:02 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-lp19, operation: add
+Package: G4Propagator
 User: heather  Thu Mar 15 11:53:36 2012
 Files:
   G4Propagator/.cvsignore  1.3
