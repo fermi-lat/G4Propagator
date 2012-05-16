@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue May 15 17:29:32 PDT 2012
+GlastRelease-scons/G4Propagator
+
+Modified Files:
+	SConscript 
+Log Message:
+eliminate unnecessary addition to include path
+    *
+------------------------------------------------------------
 User: jrb  Tue May 15 17:23:06 PDT 2012
 GlastRelease-scons/G4Propagator/src
 
