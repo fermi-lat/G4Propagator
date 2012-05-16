@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue May 15 17:23:06 PDT 2012
+GlastRelease-scons/G4Propagator/src
+
+Modified Files:
+	G4PropagatorExceptionHandler.cxx 
+Log Message:
+eliminate unnecessary, trouble-causing #include 
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr31, operation: add
 Package: G4Propagator
