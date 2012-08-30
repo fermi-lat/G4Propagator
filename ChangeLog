@@ -1,5 +1,35 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-20-05-00, operation: del
+Package: G4Propagator
+User: glastrm  Thu Aug 30 11:45:48 2012
+Files:
+  G4Propagator/.cvsignore  1.3
+  G4Propagator/G4PropagatorLib.py  1.2
+  G4Propagator/ChangeLog  1.288
+  G4Propagator/SConscript  1.14
+  G4Propagator/cmt/.cvsignore  1.1.1.1
+  G4Propagator/cmt/requirements  1.43
+  G4Propagator/doc/release.notes  1.52
+  G4Propagator/src/G4ParticlePropagator.h  1.5
+  G4Propagator/src/G4PropagatorTool.h  1.4
+  G4Propagator/src/G4ParticlePropagator.cxx  1.6
+  G4Propagator/src/mainpage.h  1.3
+  G4Propagator/src/ParticleTransporter.h  1.10
+  G4Propagator/src/G4PropagationTool.cxx  1.22
+  G4Propagator/src/ParticleTransporter.cxx  1.31
+  G4Propagator/src/G4PropagatorExceptionHandler.h  1.1
+  G4Propagator/src/G4PropagatorExceptionHandler.cxx  1.3
+  G4Propagator/src/G4PropagatorTool.cxx  1.7
+  G4Propagator/src/Dll/G4Propagator_load.cxx  1.2
+  G4Propagator/src/Dll/G4Propagator_dll.cxx  1.1.1.1
+  G4Propagator/src/test/jobOptions.txt  1.8
+  G4Propagator/src/test/test_sources.xml  1.1.1.1
+  G4Propagator/src/test/G4TestAlg.cxx  1.5
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-20-05-00, operation: add
 Package: G4Propagator
 User: heather  Thu Aug 30 11:36:47 2012
