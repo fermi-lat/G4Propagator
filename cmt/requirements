@@ -2,7 +2,7 @@ package G4Propagator
 version v3r1p1
 author Tracy Usher   <usher@slac.stanford.edu>
 
-#$Id: requirements,v 1.42 2011/12/12 20:49:50 heather Exp $
+#$Id: requirements,v 1.43 2012/05/17 18:16:26 jrb Exp $
 
 use GlastPolicy v*
 
@@ -16,7 +16,7 @@ private
 
 #this is private to avoid passing on build info to clients
 use Geant4   v9r* IExternal
-use RootmapPolicy * GlastPolicy
+#use RootmapPolicy * GlastPolicy
 
 use gr_app v*
 
@@ -35,7 +35,7 @@ apply_pattern package_headers
 macro source "*.cxx" WIN32 "*.h *.cxx"
 library G4Propagator -s=../src $(source)   
 
-apply_pattern generate_rootmap library=G4Propagator
+#apply_pattern generate_rootmap library=G4Propagator
 
 # test program 
 # following for test program only: no dependence on the interface
