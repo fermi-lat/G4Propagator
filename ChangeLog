@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Jan 21 08:05:47 PST 2013
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Set an upper limit on incoming momentum to calculate multiple scattering errors with aim to get rid of potential round off errors that might be coming from high energies.
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-04, operation: add
 Package: G4Propagator
