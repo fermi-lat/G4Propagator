@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Apr  2 07:35:04 PDT 2013
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Divide cross term by factor of 2 to get matrix to be invertible. (Why?)
+    *
+------------------------------------------------------------
 User: usher  Sun Mar 31 13:03:29 PDT 2013
 G4Propagator/src
 
