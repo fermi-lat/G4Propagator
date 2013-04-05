@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Apr  5 15:10:49 PDT 2013
+G4Propagator/src
+
+Modified Files:
+	G4PropagationTool.cxx 
+Log Message:
+Adding option to switch between step-by-step calculation of MS values vs one calculation based on total radiation lengths traversed.
+    *
+------------------------------------------------------------
 User: usher  Tue Apr  2 07:35:04 PDT 2013
 G4Propagator/src
 
