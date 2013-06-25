@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: usher  Tue Jun 25 13:43:27 PDT 2013
-G4Propagator/src
-
-Modified Files:
-	G4PropagationTool.cxx 
-Log Message:
-Adding methods to recover material name and index at a given step
-    *
-------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-17, operation: add
 Package: G4Propagator
