@@ -1,9 +1,10 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.53 2013/01/23 16:52:37 usher Exp $
+    $Id: release.notes,v 1.54 2013/04/06 17:57:00 usher Exp $
  @verbatim
  * EOH *
 
+ G4Propagator-03-02-00 25-Jun-2013 TU Add two new methods to recover material name and index into material table
  G4Propagator-03-01-03  6-Apr-2013 TU Add option to G4PropagationTool to switch methods of determing ms coefficients in matrix
  G4Propagator-03-01-02 23-Jan-2013 TU Include an energy cutoff on calculating the MS error matrix
  G4Propagator-03-01-01 17-May-2012    jrb eliminate unnecessary #include and corresponding addition to include path
