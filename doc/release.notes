@@ -1,9 +1,13 @@
 /** @file release.notes
     @brief package G4Propagator
-    $Id: release.notes,v 1.48 2010/12/02 00:39:50 jrb Exp $
+    $Id: release.notes,v 1.48.20.1 2012/01/26 19:12:02 heather Exp $
  @verbatim
  * EOH *
 
+ G4Propagator-02-05-05-gr02 04-Oct-2013 usher Fixing the comparison to 
+  cached start position/direction and step length from equality to within 
+  tolerance.  In response to discrepancies in events between 17-35-24-gr17
+  and 17-35-24-lp57
  G4Propagator-02-05-05-gr01 26-Jan-2012 hmk Gaudi v21r7
  G4Propagator-02-05-05 01-Dec-2010    jrb Make new main branch tag for SCons RM
  G4Propagator-02-05-04 12-Jun-2010    jrb upgrades for SCons builds
