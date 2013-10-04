@@ -4,7 +4,7 @@
 // @author Tracy Usher
 //
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.29 2008/08/13 20:10:46 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/G4Propagator/src/ParticleTransporter.cxx,v 1.30 2008/08/13 22:13:08 usher Exp $
 //
 
 #include "ParticleTransporter.h"
@@ -90,7 +90,11 @@ void ParticleTransporter::setInitStep(const Point& start,  const Vector& dir)
     // Compare start position and direction to last start and direction
     // This is an attempt to cache info in order to prevent repeated running of propagator
     // over the same parameters
-    if (const_cast<Point&>(start) == prevStartPoint && const_cast<Vector&>(dir) == prevStartDir)
+    Vector startPointDiff = start - prevStartPoint;
+    double dltStartDirAng = 1. - dir.dot(prevStartDir);
+
+    if (dltStartDirAng < 0.01*kCarTolerance && startPointDiff.mag() < 0.01*kCarTolerance)
+      //if (const_cast<Point&>(start) == prevStartPoint && const_cast<Vector&>(dir) == prevStartDir)
     {
         sameStartParams = true;
     }
@@ -293,7 +297,9 @@ bool ParticleTransporter::StepAnArcLength(const double maxArcLen)
     // Restrictions and Caveats: None
 
     // First check if this is a repeated step
-    if (sameStartParams && prevArcLen == maxArcLen) return true;
+    double deltaArcLen = fabs(prevArcLen - maxArcLen);
+
+    if (sameStartParams && deltaArcLen < 0.01*kCarTolerance) return true;
 
     G4Navigator*  navigator = m_TransportationManager->GetNavigatorForTracking();
     bool          success   = false;
