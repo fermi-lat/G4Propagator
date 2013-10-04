@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Fri Oct  4 08:53:11 PDT 2013
+G4Propagator/src
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	ParticleTransporter.cxx 
+Log Message:
+Fixing the comparison to cached start position/direction and step length from equality to within tolerance. 
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-lp57, operation: add
 Package: G4Propagator
